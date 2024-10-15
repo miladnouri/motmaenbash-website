@@ -107,7 +107,7 @@ header p i {
     display: none;
 }
 
-#download {
+.download {
     display: grid;
     grid-template-columns: auto auto;
     background: rgb(25, 32, 28, .95);
@@ -139,7 +139,7 @@ header p i {
 
 }
 
-#download .col-6 ul {
+.download .col-6 ul {
     list-style: none;
     text-align: center;
     display: flex;
@@ -148,7 +148,7 @@ header p i {
     margin-top: 50px;
 }
 
-#download ul li {
+.download ul li {
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
@@ -160,7 +160,7 @@ header p i {
     margin: 0 15px;
 }
 
-#download ul li::before {
+.download ul li::before {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -175,35 +175,29 @@ header p i {
     border-radius: 50px;
 }
 
-#download ul li:hover {
+.download ul li:hover {
     background: #FFF;
     color: #000;
 }
 
-#download ul li:hover::before {
+.download ul li:hover::before {
     animation: beamScale .5s;
 }
 
-#download h3 {
+.download h3 {
     font-size: 48px;
     text-align: center;
 }
 
-#whatsphishing {
+#whatsphishing, #againstphishing, #report, #android-download  {
     background: rgba(255, 255, 255, 1);
     padding: 50px 25%;
 }
 
 #againstphishing {
-    background: rgb(255, 255, 255, 1);
-    padding: 50px 25%;
     position: relative;
 }
 
-#report {
-    background: rgb(255, 255, 255, 1);
-    padding: 50px 25%;
-}
 
 #againstphishing::before {
     position: relative;
@@ -216,9 +210,7 @@ header p i {
     margin-bottom: 50px;
 }
 
-#whatsphishing p,
-#againstphishing p,
-#report p
+section p
 {
     font-size: 20px;
     line-height: 36px;
@@ -226,26 +218,12 @@ header p i {
     text-align: justify;
 }
 
-#whatsphishing h2,
-#againstphishing h2,
-#report h2 {
+section h2 {
     font-size: 48px;
     font-weight: bold;
 }
 
-#whatsphishing h2.title-bg::before {
-    -webkit-text-stroke: 1px #000 !important;
-    opacity: .5;
-    right: -3px;
-}
-
-#againstphishing h2.title-bg::before {
-    -webkit-text-stroke: 1px #000 !important;
-    opacity: .5;
-    right: -3px;
-}
-
-#report h2.title-bg::before {
+section h2.title-bg::before {
     -webkit-text-stroke: 1px #000 !important;
     opacity: .5;
     right: -3px;
@@ -444,16 +422,16 @@ a:focus {
         width: 100%;
     }
 
-    #download .col-6 {
+    .download .col-6 {
         display: block;
         width: 100%;
     }
 
-    #download .col-6 ul {
+    .download .col-6 ul {
         display: block;
     }
 
-    #download .col-6 ul li {
+    .download .col-6 ul li {
         display: block;
         width: 100%;
         margin-bottom: 25px;
