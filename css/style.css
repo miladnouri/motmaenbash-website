@@ -1,0 +1,424 @@
+@charset "UTF-8";
+@import url('ionicons.min.css');
+
+:root {
+    --bs-blue: rgb(19, 109, 188);
+    --bs-blue-dark: rgb(18, 97, 167);
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazirmatn-RD[wght].ttf') format('woff2-variations');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* استایل دکمه‌ها */
+.btn {
+    border-radius: 50px;
+    font-weight: 400;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+    transform: translateY(2px);
+
+}
+
+.btn-light {
+    background: white;
+    color: #007bff;
+}
+
+.btn-light:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+
+.btn-blue,
+.btn-blue:hover {
+    color: #fff;
+}
+
+.btn-blue {
+    background: var(--bs-blue-dark);
+}
+
+.btn-blue:hover {
+    background: var(--bs-blue);
+}
+
+
+.btn b {
+    font-weight: 700;
+}
+
+/* استایل اولیه منو */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* استایل منو پس از اسکرول */
+.navbar.scrolled {
+    position: fixed;
+    background: white !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+.navbar.scrolled .navbar-brand {
+    font-weight: 900;
+}
+
+/* استایل لینک‌ها در حالت اولیه */
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-item::after {
+    width: 0;
+    height: 2px;
+    background: #FFF;
+    display: block;
+    right: 0;
+    left: 0;
+    margin: auto;
+    content: '';
+    bottom: -15px;
+    transition: all .5s;
+}
+
+/* استایل لینک‌ها پس از اسکرول */
+.navbar.scrolled .navbar-brand {
+    color: var(--bs-blue) !important;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled .nav-link {
+    color: #333 !important;
+}
+
+/* انیمیشن برای ظاهر شدن منو */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar .nav-link:hover {
+    color: #007bff;
+}
+
+/* سکشن Hero */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section .logo {
+    width: 170px;
+    transition: transform 0.3s ease;
+}
+
+
+.hero-section .logo:hover {
+    transform: scale(1.3) translateY(-16px);
+}
+
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bs-blue);
+    opacity: .85;
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section a {
+    color: white;
+}
+
+.hero-content .social-share a {
+    display: inline-block;
+    /* transition: background-color 0.3s ease; */
+    transition: transform 0.3s ease;
+}
+
+.hero-content .social-share a:hover {
+    transform: scale(1.3);
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    position: relative;
+    font-weight: 900;
+}
+
+
+.hero-content .btn {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all .2s;
+    margin: 0 8px;
+    color: #FFF !important;
+}
+
+
+
+.hero-content .btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* .hero-content h1:hover:before{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation: beam 3.5s;
+    animation-iteration-count: infinite;
+} */
+
+.hero-content h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+
+
+.app-icon {
+    width: 96px;
+}
+
+/* استایل بخش‌های دیگر */
+section {
+    padding: 60px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.title-bg {
+    position: relative;
+}
+
+/* .title-bg::before {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFF;
+    z-index: 1;
+    opacity: .7;
+    top: -3px;
+    right: -7px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+} */
+
+section h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+section h2.title-bg::before {
+    -webkit-text-stroke: 1px #000 !important;
+    opacity: .4;
+    right: -2px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--bs-blue-dark);
+    color: white;
+    box-shadow: none;
+}
+
+/* دانلود افزونه‌ها */
+#download ul {
+    list-style: none;
+    padding: 0;
+}
+
+#download ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#download ul li a:hover {
+    text-decoration: underline;
+}
+
+.screenshot {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Donate */
+#donate {
+    background: #ffeeba;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.media-logos a {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.media-logos a:hover {
+    transform: scale(1.2);
+}
+
+.media-logos img {
+    max-width: 96px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #07c9ff;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-section .logo {
+        width: 150px;
+    }
+
+
+    .screenshot {
+        max-width: 110px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        background: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #333 !important;
+    }
+
+    .navbar-toggler {
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
+
+
+@keyframes beam {
+    0% {
+        transform: scale(1);
+        opacity: .5;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes beamScale {
+    0% {
+        transform: scaleX(1) scaleY(1);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scaleX(1.3) scaleY(1.5);
+        opacity: 0;
+    }
+}
