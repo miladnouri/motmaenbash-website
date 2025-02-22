@@ -29,7 +29,7 @@ a {
     text-decoration: none;
 }
 
-/* استایل دکمه‌ها */
+/* Buttons */
 .btn {
     border-radius: 50px;
     font-weight: 400;
@@ -73,7 +73,7 @@ a {
     font-weight: 700;
 }
 
-/* استایل اولیه منو */
+/* Menu */
 .navbar {
     position: absolute;
     top: 0;
@@ -84,7 +84,7 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-/* استایل منو پس از اسکرول */
+/* Scrolled Menu */
 .navbar.scrolled {
     position: fixed;
     background: white !important;
@@ -96,7 +96,6 @@ a {
     font-weight: 900;
 }
 
-/* استایل لینک‌ها در حالت اولیه */
 .navbar .navbar-brand,
 .navbar .nav-link {
     color: white !important;
@@ -120,7 +119,6 @@ a {
     transition: all .5s;
 }
 
-/* استایل لینک‌ها پس از اسکرول */
 .navbar.scrolled .navbar-brand {
     color: var(--bs-blue) !important;
     font-size: 1.5rem;
@@ -130,7 +128,7 @@ a {
     color: #333 !important;
 }
 
-/* انیمیشن برای ظاهر شدن منو */
+/* Menu Animation */
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -147,7 +145,7 @@ a {
     color: #007bff;
 }
 
-/* سکشن Hero */
+/* Hero Section */
 .hero-section {
     position: relative;
     width: 100%;
@@ -250,9 +248,8 @@ a {
     width: 96px;
 }
 
-/* استایل بخش‌های دیگر */
 section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     background: #fff;
     border-bottom: 1px solid #ddd;
 }
@@ -294,7 +291,7 @@ section h2.title-bg::before {
     box-shadow: none;
 }
 
-/* دانلود افزونه‌ها */
+/* Extension Download */
 #download ul {
     list-style: none;
     padding: 0;
@@ -327,7 +324,7 @@ section h2.title-bg::before {
 
 
 /* Donate */
-#donate {
+.donate {
     background: #ffeeba;
     padding: 40px;
     border-radius: 10px;
@@ -351,7 +348,7 @@ section h2.title-bg::before {
 footer {
     background: #333;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -373,6 +370,9 @@ footer a {
         width: 150px;
     }
 
+    section h2 {
+        font-size: 1.9rem;
+    }
 
     .screenshot {
         max-width: 110px;
@@ -380,11 +380,26 @@ footer a {
 }
 
 @media (max-width: 992px) {
+
+    section .container {
+        padding: 20px 10px;
+    }
+
+    section {
+        /* padding: 20px 20px; */
+    }
+
     .navbar {
-        background: rgba(255, 255, 255, 0.9) !important;
+        background: white !important;
     }
 
     .navbar .navbar-brand,
+    .navbar.scrolled .navbar-brand {
+        color: var(--bs-blue) !important;
+        font-weight: 900;
+        font-size: 1.3rem;
+    }
+
     .navbar .nav-link {
         color: #333 !important;
     }
@@ -396,6 +411,16 @@ footer a {
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
+
+    .app-icon {
+        width: 64px;
+    }
+
+    .donate {
+        padding: 20px;
+    }
+
+
 }
 
 
