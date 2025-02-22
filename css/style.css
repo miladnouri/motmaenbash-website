@@ -90,6 +90,7 @@ a {
     background: white !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     animation: fadeInDown 0.5s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.scrolled .navbar-brand {
@@ -352,7 +353,38 @@ footer {
     text-align: center;
 }
 
-footer a {
+footer h5 {
+    font-size: .95rem;
+    font-weight: 700;
+}
+
+footer h5::after {
+    width: 50%;
+    height: 1px;
+    background: #dadada;
+    display: block;
+    right: 0;
+    left: 0;
+    margin: 12px auto;
+    content: '';
+    top: 5px;
+    transition: all .5s;
+}
+
+
+footer ul li a {
+    display: inline-block;
+    color: rgb(195, 195, 195);
+    font-size: 1rem;
+    margin-bottom: .9rem;
+    transition: all .3s ease;
+}
+
+footer ul li a:hover {
+    transform: translateX(3px);
+}
+
+.footer-copyright a {
     color: #07c9ff;
 }
 

@@ -1,737 +1,363 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <head>
     <title>MotmaenBash | افزونه ضد فیشینگ مطمئن باش</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#1261A7">
-
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="مطمئن باش - افزونه ضد فیشینگ برای مرورگرها و اپلیکیشن اندروید جهت بررسی و هشدار به کاربران در مورد فیشینگ و کلاهبرداری اینترنتی." />
-    <meta name="keywords"
-        content="ضد فیشینگ, افزونه مرورگر, اپلیکیشن اندروید, مطمئن باش, کلاهبرداری اینترنتی, فیشینگ" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Milad Nouri" />
-
-    <!-- Open Graph Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://motmaenbash.ir" />
-    <meta property="og:title" content="مطمئن باش - افزونه ضد فیشینگ" />
-    <meta property="og:description" content="بررسی و هشدار فیشینگ و کلاهبرداری درگاه‌های پرداخت اینترنتی و لینک‌ها." />
-    <meta property="og:image" content="https://motmaenbash.ir/images/logo.svg" />
-    <meta property="og:locale" content="fa_IR" />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://motmaenbash.ir" />
-    <meta name="twitter:title" content="مطمئن باش - افزونه ضد فیشینگ" />
-    <meta name="twitter:description" content="بررسی و هشدار فیشینگ و کلاهبرداری درگاه‌های پرداخت اینترنتی و لینک‌ها." />
-    <meta name="twitter:image" content="https://motmaenbash.ir/images/logo.svg" />
-
-    <!-- Other required meta tags -->
-    <link rel="canonical" href="https://motmaenbash.ir" />
-
+    <meta name="description" content="مطمئن باش - افزونه ضد فیشینگ برای مرورگرها و اپلیکیشن اندروید جهت بررسی و هشدار به کاربران در مورد فیشینگ و کلاهبرداری اینترنتی.">
+    <meta name="keywords" content="ضد فیشینگ, افزونه مرورگر, اپلیکیشن اندروید, مطمئن باش, کلاهبرداری اینترنتی, فیشینگ">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Milad Nouri">
+    <!-- Open Graph Tags-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://motmaenbash.ir">
+    <meta property="og:title" content="MotmaenBash | افزونه ضد فیشینگ مطمئن باش">
+    <meta property="og:description" content="بررسی و هشدار فیشینگ و کلاهبرداری درگاه‌های پرداخت اینترنتی و لینک‌ها.">
+    <meta property="og:image" content="https://motmaenbash.ir/images/logo.svg">
+    <meta property="og:locale" content="fa_IR">
+    <!-- Twitter Meta Tags-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://motmaenbash.ir">
+    <meta name="twitter:title" content="MotmaenBash | افزونه ضد فیشینگ مطمئن باش">
+    <meta name="twitter:description" content="بررسی و هشدار فیشینگ و کلاهبرداری درگاه‌های پرداخت اینترنتی و لینک‌ها.">
+    <meta name="twitter:image" content="https://motmaenbash.ir/images/logo.svg">
+    <!-- Other required meta tags-->
+    <link rel="canonical" href="https://motmaenbash.ir">
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css?v=v5.3.3">
-    <link rel="stylesheet" href="css/style.css?v=1.0.1" />
-    <script src="js/bootstrap.bundle.min.js?v=5.3.3"></script>
-
+    <link rel="stylesheet" href="css/style.css?v=1.0.2">
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "مطمئن باش",
-          "url": "https://motmaenbash.ir",
-          "logo": "https://motmaenbash.ir/images/logo.svg",
-          "sameAs": [
-            "https://github.com/miladnouri/motmaenbash-website"
-          ]
-        }
-        </script>
-</head>
-
-<body>
-
-
-
-
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "مطمئن باش",
+        "url": "https://motmaenbash.ir",
+        "logo": "https://motmaenbash.ir/images/logo.svg",
+        "sameAs": [
+          "https://github.com/miladnouri/motmaenbash-website"
+        ]
+      }
+    </script>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="https://motmaenbash.ir">مطمئن باش</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#whatsphishing" title="فیشینگ چیست؟"
-                            target="_self"><b>فیشینگ</b> چیست؟</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#donate"><i class="ion ion-md-heart"></i> حمایت
-                            مالی</a></li>
-
-                    <li class="nav-item dropdown" id="downloadMenu">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="ion ion-md-download"></i> دانلود
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Android App -->
-                            <li>
-                                <h6 class="dropdown-header">اپلیکیشن اندروید</h6>
-                            </li>
-                            <li><a class="dropdown-item" href="https://play.google.com/store/apps/details?id="
-                                    target="_blank">
-                                    گوکل‌پلی
-                                    <span class="badge bg-info text-white ms-2">به زودی</span>
-
-                                </a></li>
-                            <li><a class="dropdown-item" href="https://cafebazaar.ir/app/" target="_blank">
-                                    بازار
-                                    <span class="badge bg-info text-white ms-2">به زودی</span>
-                                </a></li>
-
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-
-                            <!-- Browser Extensions -->
-                            <li>
-                                <h6 class="dropdown-header">افزونه مرورگر</h6>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="https://chrome.google.com/webstore/detail/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/efhpmpdbeaganelnekhbffjphahncbgn"
-                                    target="_blank">
-                                    کروم
-                                </a></li>
-                            <li><a class="dropdown-item"
-                                    href="https://addons.mozilla.org/en-US/firefox/addon/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/"
-                                    target="_blank">
-                                    فایرفاکس
-                                </a></li>
-                            <li><a class="dropdown-item"
-                                    href="https://chrome.google.com/webstore/detail/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/efhpmpdbeaganelnekhbffjphahncbgn"
-                                    target="_blank">
-                                    یاندکس
-                                </a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/miladnouri/motmaenbash-website"
-                            target="_blank" title="مخزن گیت‌هاب"><i class="ion ion-logo-github"></i> گیت‌هاب</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        
+        <a class="navbar-brand" href="https://motmaenbash.ir">مطمئن باش</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#whatsphishing" title="فیشینگ چیست؟"> <b>فیشینگ </b>چیست؟</a></li>
+            <li class="nav-item"><a class="nav-link" href="#donate"><i class="ion ion-md-heart"></i> حمایت مالی</a></li>
+            <li class="nav-item dropdown" id="downloadMenu"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="ion ion-md-download"></i> دانلود</a>
+              <ul class="dropdown-menu">
+                
+                <!-- Android App -->
+                <li>
+                  <h6 class="dropdown-header">اپلیکیشن اندروید</h6>
+                </li>
+                <li><a class="dropdown-item" href="https://play.google.com/store/apps/details?id=" target="_blank">گوکل‌پلی<span class="badge bg-info text-white ms-2">به زودی</span></a></li>
+                <li><a class="dropdown-item" href="https://cafebazaar.ir/app/" target="_blank">بازار<span class="badge bg-info text-white ms-2">به زودی</span></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <!-- Browser Extensions -->
+                <li>
+                  <h6 class="dropdown-header">افزونه مرورگر</h6>
+                </li>
+                <li><a class="dropdown-item" href="https://chrome.google.com/webstore/detail/motmaenbash-مطمئن-باش/efhpmpdbeaganelnekhbffjphahncbgn" target="_blank">کروم</a></li>
+                <li><a class="dropdown-item" href="https://addons.mozilla.org/en-US/firefox/addon/motmaenbash-مطمئن-باش/" target="_blank">فایرفاکس</a></li>
+                <li><a class="dropdown-item" href="https://chrome.google.com/webstore/detail/motmaenbash-مطمئن-باش/efhpmpdbeaganelnekhbffjphahncbgn" target="_blank">یاندکس</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/miladnouri/motmaenbash-android" target="_blank" title="مخزن گیت‌هاب"><i class="ion ion-logo-github"></i> گیت‌هاب</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-
-    <!-- Hero Section -->
+    <!-- Hero Section-->
     <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <img src="images/logo-tr.svg" alt="MotmaenBash | مطمئن باش" class="mb-2 logo">
-            <h1 title="مطمئن باش">مطمئن باش!</h1>
-            <h2>اپلیکیشن تشخیص فیشینگ</h2>
-
-            <div class="mt-5 mb-3">در شبکه‌های اجتماعی به اشتراک بگذارید:</div>
-
-            <p class="social-share">
-                <!-- WhatsApp Share Link -->
-                <a class="mx-2" target="_blank"
-                    href="https://wa.me/?text=بررسی%20اصالت%20درگاه‌های%20پرداخت%20اینترنتی%20ایرانی%20%0A%20https://motmaenbash.ir"
-                    title="Share on Whatsapp" target="_self" aria-label="واتس‌اپ">
-                    <i class="ion ion-logo-whatsapp fs-1"></i>
-                </a>
-
-                <!-- Twitter Share Link -->
-                <a class="mx-2" target="_blank"
-                    href="https://x.com/intent/tweet?text=بررسی%20اصالت%20درگاه‌های%20پرداخت%20اینترنتی%20ایرانی&url=https://motmaenbash.ir"
-                    title="Share on Twitter" target="_self" aria-label="توییتر">
-                    <i class="ion ion-logo-twitter fs-1"></i>
-                </a>
-
-                <!-- Telegram Share Link -->
-                <a class="mx-2" target="_blank"
-                    href="https://t.me/share/url?url=https://motmaenbash.ir&text=بررسی%20اصالت%20درگاه‌های%20پرداخت%20اینترنتی%20ایرانی"
-                    title="Share on Telegram" target="_self" aria-label="تلگرام">
-                    <i class="ion ion-md-paper-plane fs-1"></i>
-                </a>
-
-                <!-- Linkedin Share Link -->
-                <a class="mx-2" target="_blank"
-                    href="https://www.linkedin.com/sharing/share-offsite/?url=https://motmaenbash.ir"
-                    title="Share on LinkedIn" target="_self" aria-label="لینکدین">
-                    <i class="ion ion-logo-linkedin fs-1"></i>
-                </a>
-
-                </a>
-            </p>
-
-            <div class="pt-3">
-                <a href="#android-app" class="btn fs-5 m-2">نصب اپلیکیشن <b>مطمئن باش</b></a>
-                <a href="#download" class="btn fs-5 m-2">نصب افزونه <b>مطمئن باش</b></a>
-            </div>
-
-
-
-        </div>
-    </section>
-
-
-    <section id="android-app" class="container my-2">
-        <h2 class="title-bg d-flex align-items-center mb-lg-4" title="اپلیکیشن اندروید مطمئن باش">اپلیکیشن اندروید مطمئن
-            باش
-            <span class="badge bg-info text-white fs-6 ms-2">به زودی</span>
-
-        </h2>
-
-        <div class="row align-items-start">
-            <div class="col-md-6 mb-2">
-
-                <div class="mb-4 fw-light mt-3">
-                    <div class="d-flex align-items-start">
-                        <img src="images/logo.svg" alt="Android App" class="app-icon rounded-3 mb-2 me-3">
-                        <div>
-
-                            <p class="">
-                                اپلیکیشن اندروید <b>مطمئن باش</b> یک ابزار جامع برای محافظت از شما در برابر انواع
-                                کلاهبرداری‌های اینترنتی است. این اپلیکیشن به طور خودکار موارد مشکوک را شناسایی کرده و به
-                                شما هشدار می‌دهد.
-                            </p>
-
-
-                        </div>
-                    </div>
-                    <ul class="list-unstyled mt-2 fs-6">
-                        <li>
-                            <i class="ion ion-md-checkmark-circle text-success"></i>
-                            بررسی و تشخیص اصالت درگاه‌های پرداخت بانکی پیش از واردکردن اطلاعات کارت بانکی
-                        </li>
-                        <li>
-                            <i class="ion ion-md-checkmark-circle text-success"></i>
-                            بررسی و تحلیل خودکار پیامک‌های دریافتی برای شناسایی لینک‌های خطرناک و پیامک‌های فیشینگ
-                        </li>
-                        <li>
-                            <i class="ion ion-md-checkmark-circle text-success"></i>
-                            شناسایی اپلیکیشن‌های کلاهبرداری و هشدار فوری هنگام نصب آن‌ها
-                        </li>
-                        <li>
-                            <i class="ion ion-md-checkmark-circle text-success"></i>
-                            هشدار فوری هنگام بازدید از درگاه پرداخت فیشینگ و سایت‌ها و لینک‌های کلاهبرداری شناسایی
-                            شده
-                        </li>
-                        <li>
-                            <i class="ion ion-md-checkmark-circle text-success"></i>
-                            به‌روزرسانی مداوم و خودکار پایگاه داده برای شناسایی جدیدترین روش‌ها و ابزارهای
-                            کلاهبرداری با همکاری جامعه کاربران و متخصصان
-
-                        </li>
-                        <li>
-                            <i class="ion ion-md-checkmark-circle text-success"></i>
-                            اطلاع‌رسانی در مورد آخرین شگردهای کلاهبرداری
-
-                        </li>
-                    </ul>
-
-
-                </div>
-
-
-                <div class="row g-3 text-center ">
-                    <div class="col-md-6">
-                        <a href="https://play.google.com/store/apps/details?id=" target="_blank"
-                            class="btn btn-blue w-100">دانلود از گوکل‌پلی</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="https://cafebazaar.ir/app/" target="_blank" class="btn btn-blue w-100">دانلود از
-                            بازار</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="https://t.me/miladnourichannel/" target="_blank" class="btn btn-blue w-100">دانلود از
-                            کانال میلاد نوری</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="https://t.me/miladnourichannel/" target="_blank" class="btn btn-blue w-100">دانلود
-                            مستقیم از گیت‌هاب</a>
-                    </div>
-                </div>
-
-
-
-            </div>
-            <div class="col-md-6 text-center">
-                <div class="d-flex gap-3 align-items-start h-100">
-                    <img src="images/screenshot1.jpg" alt="Screenshot 1" class="screenshot">
-                    <img src="images/screenshot2.jpg" alt="Screenshot 2" class="screenshot">
-                    <img src="images/screenshot3.jpg" alt="Screenshot 3" class="screenshot">
-                </div>
-            </div>
-
-            <div class="alert alert-warning mt-5 col-12 fs-6">
-                <i class="ion ion-md-warning"></i>
-                لطفا اپلیکیشن <b>مطمئن باش</b> را تنها از لینک‌های رسمی بالا دریافت و نصب کنید.
-                <br>
-                <i class="ion ion-md-warning"></i>
-                نسخه‌هایی که از سایر منابع دریافت می‌شوند، ممکن است تغییر یافته، ناامن یا آلوده به بدافزار باشند.
-                <br>
-                <i class="ion ion-md-warning"></i>
-                هرگونه خطر و پیامد ناشی از نصب نسخه‌های غیررسمی بر عهده کاربر خواهد بود.
-            </div>
-        </div>
-
-
-    </section>
-
-    <section id="download" class="container my-2">
-        <h2 class="mb-4 text-center">افزونه مرورگر مطمئن باش</h2>
-        <p class="text-center text-muted mb-5">
-
-            افزونه <strong>مطمئن باش</strong> برای مرورگرهای اینترنتی طراحی شده تا اصالت درگاه‌های پرداخت اینترنتی را
-            بررسی کند. با نصب این افزونه، از کلاهبرداری‌های اینترنتی هنگام پرداخت آنلاین در امان بمانید.
-
+      <div class="hero-overlay"></div>
+      <div class="hero-content"><img class="logo mb-2" src="images/logo-tr.svg" alt="MotmaenBash | مطمئن باش">
+        <h1 title="مطمئن باش">مطمئن باش!</h1>
+        <h2>اپلیکیشن تشخیص فیشینگ</h2>
+        <div class="mt-5 mb-3">در شبکه‌های اجتماعی به اشتراک بگذارید:</div>
+        <p class="social-share">
+          <!-- WhatsApp Share Link--><a class="mx-2" target="_blank" href="https://wa.me/?text=بررسی%20اصالت%20درگاه‌های%20پرداخت%20اینترنتی%20ایرانی%20%0A%20https://motmaenbash.ir" title="Share on Whatsapp" aria-label="واتس‌اپ"><i class="ion ion-logo-whatsapp fs-1"></i></a>
+          <!-- Twitter Share Link--><a class="mx-2" target="_blank" href="https://x.com/intent/tweet?text=بررسی%20اصالت%20درگاه‌های%20پرداخت%20اینترنتی%20ایرانی&amp;url=https://motmaenbash.ir" title="Share on Twitter" aria-label="توییتر"><i class="ion ion-logo-twitter fs-1"></i></a>
+          <!-- Telegram Share Link--><a class="mx-2" target="_blank" href="https://t.me/share/url?url=https://motmaenbash.ir&amp;text=بررسی%20اصالت%20درگاه‌های%20پرداخت%20اینترنتی%20ایرانی" title="Share on Telegram" aria-label="تلگرام"><i class="ion ion-md-paper-plane fs-1"></i></a>
+          <!-- Linkedin Share Link--><a class="mx-2" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https://motmaenbash.ir" title="Share on LinkedIn" aria-label="لینکدین"><i class="ion ion-logo-linkedin fs-1"></i></a>
         </p>
-
-
-        <div class="row justify-content-center g-4">
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-lg position-relative">
-                    <div class="position-absolute top-0 end-0 mt-2 me-2">
-                        <span class="badge bg-success me-1">دسکتاپ</span>
-                    </div>
-                    <div class="card-body text-center">
-                        <img src="images/chrome.svg" alt="افزونه کروم" class="w-25 mb-4">
-                        <h5>مرورگر گوگل کروم</h5>
-                        <p class="text-muted fs-6">امنیت بیشتر در پرداخت‌های اینترنتی </p>
-                        <a href="https://chromewebstore.google.com/detail/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/efhpmpdbeaganelnekhbffjphahncbgn"
-                            target="_blank" class="btn btn-blue mt-2">
-                            <i class="ion ion-md-download"></i> دریافت افزونه گوگل کروم
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-lg position-relative">
-                    <div class="position-absolute top-0 end-0 mt-2 me-2">
-                        <span class="badge bg-success me-1">دسکتاپ</span>
-                        <span class="badge bg-info">موبایل</span>
-                    </div>
-                    <div class="card-body text-center">
-                        <img src="images/firefox.svg" alt="افزونه فایرفاکس" class="w-25 mb-4">
-                        <h5>مرورگر فایرفاکس</h5>
-                        <p class="text-muted fs-6">امنیت بیشتر در پرداخت‌های اینترنتی</p>
-                        <a href="https://addons.mozilla.org/en-US/firefox/addon/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/"
-                            target="_blank" class="btn btn-blue mt-2">
-                            <i class="ion ion-md-download"></i> دریافت افزونه فایرفاکس
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-lg position-relative">
-                    <div class="position-absolute top-0 end-0 mt-2 me-2">
-                        <span class="badge bg-success me-1">دسکتاپ</span>
-                        <span class="badge bg-info">موبایل</span>
-                    </div>
-                    <div class="card-body text-center">
-                        <img src="images/yandex.svg" alt="افزونه یاندکس" class="w-25 mb-4">
-                        <h5>مرورگر یاندکس</h5>
-                        <p class="text-muted fs-6">امکان نصب افزونه‌های کروم بر روی مرورگر یاندکس</p>
-                        <a href="https://chrome.google.com/webstore/detail/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/efhpmpdbeaganelnekhbffjphahncbgn"
-                            target="_blank" class="btn btn-blue mt-2">
-                            <i class="ion ion-md-download"></i> دریافت افزونه یاندکس
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="pt-3"><a class="btn fs-5 m-2" href="#android-app">نصب اپلیکیشن <b>مطمئن باش</b></a><a class="btn fs-5 m-2" href="#download">نصب افزونه <b>مطمئن باش</b></a></div>
+      </div>
     </section>
-
-    <section id="whatsphishing" class="container my-2">
-        <h2 class="title-bg" title="فیشینگ چیست؟">فیشینگ چیست؟</h2>
-        <div class="row">
-            <div class="col-md-6">
-
-                <p class="lh-lg fw-light">
-
-                    فیشینگ (Phishing) یکی از رایج‌ترین و خطرناک‌ترین حملات سایبری است که مهاجمان و کلاهبردارها با ایجاد
-                    نسخه‌های جعلی از سایت‌ها، درگاه‌های پرداخت و اپلیکیشن‌های موبایل شبیه به نسخه‌های اصلی، کاربران را
-                    فریب داده و تلاش می‌کنند اطلاعات حساس شما مانند اطلاعات بانکی، نام کاربری و رمزهای عبور، دارایی کیف
-                    پول رمزارز، هویت دیجیتال و... را سرقت می‌کنند. این حملات معمولا از طریق ارسال ایمیل‌های جعلی،
-                    پیامک‌های فریبنده یا تبلیغات گمراه‌کننده و انتشار لینک در شبکه‌های اجتماعی و پیام‌رسان‌ها با هدف
-                    تشویق کاربر به باز کردن لینک مخرب و یا نصب اپلیکیشن مخرب انجام می‌شوند.
-
-                </p>
-
-
-
-                <p class="lh-lg fw-bold">
-                    هدف اصلی حملات فیشینگ، دستیابی به داده‌های محرمانه کاربران است:
-                <ul class="list-unstyled fs-6">
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        اطلاعات کارت‌های بانکی و حساب‌های مالی
-                    </li>
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        نام کاربری و رمزهای عبور
-                    </li>
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        اطلاعات هویتی و شخصی
-                    </li>
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        کدهای تایید دو مرحله‌ای و رمزهای یکبار مصرف
-                    </li>
+    <section class="container my-2" id="android-app">
+      <h2 class="title-bg d-flex align-items-center mb-lg-4">اپلیکیشن اندروید مطمئن باش<span class="badge bg-info text-white fs-6 ms-2">به زودی</span></h2>
+      <div class="row align-items-start">
+        <div class="col-md-6 mb-2">
+          <div class="mb-4 fw-light mt-3">
+            <div class="d-flex align-items-start"><img class="app-icon rounded-3 mb-2 me-3" src="images/logo.svg" alt="Android App">
+              <div>
+                <p>اپلیکیشن اندروید<b>مطمئن باش</b> یک ابزار جامع برای محافظت از شما در برابر انواع کلاهبرداری‌های اینترنتی است. این اپلیکیشن به طور خودکار موارد مشکوک را شناسایی کرده و به شما هشدار می‌دهد.</p>
+              </div>
+            </div>
+            <ul class="list-unstyled mt-2 fs-6">
+              <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی و تشخیص اصالت درگاه‌های پرداخت بانکی پیش از واردکردن اطلاعات کارت بانکی</li>
+              <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی و تحلیل خودکار پیامک‌های دریافتی برای شناسایی لینک‌های خطرناک و پیامک‌های فیشینگ</li>
+              <li><i class="ion ion-md-checkmark-circle text-success"></i> شناسایی اپلیکیشن‌های کلاهبرداری و هشدار فوری هنگام نصب آن‌ها</li>
+              <li><i class="ion ion-md-checkmark-circle text-success"></i> هشدار فوری هنگام بازدید از درگاه پرداخت فیشینگ و سایت‌ها و لینک‌های کلاهبرداری شناسایی شده</li>
+              <li><i class="ion ion-md-checkmark-circle text-success"></i> به‌روزرسانی مداوم و خودکار پایگاه داده برای شناسایی جدیدترین روش‌ها و ابزارهای کلاهبرداری با همکاری جامعه کاربران و متخصصان</li>
+              <li><i class="ion ion-md-checkmark-circle text-success"></i> اطلاع‌رسانی در مورد آخرین شگردهای کلاهبرداری</li>
+            </ul>
+          </div>
+          <div class="row g-3 text-center">
+            <div class="col-md-6"><a class="btn btn-blue w-100" href="https://play.google.com/store/apps/details?id=" target="_blank">دانلود از گوکل‌پلی</a></div>
+            <div class="col-md-6"><a class="btn btn-blue w-100" href="https://cafebazaar.ir/app/" target="_blank">دانلود از بازار</a></div>
+            <div class="col-md-6"><a class="btn btn-blue w-100" href="https://t.me/miladnourichannel/" target="_blank">دانلود از کانال میلاد نوری</a></div>
+            <div class="col-md-6"><a class="btn btn-blue w-100" href="https://t.me/miladnourichannel/" target="_blank">دانلود مستقیم از گیت‌هاب</a></div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="d-flex gap-3 align-items-start h-100"><img class="screenshot" src="images/screenshot1.jpg" alt="Screenshot 1"><img class="screenshot" src="images/screenshot2.jpg" alt="Screenshot 2"><img class="screenshot" src="images/screenshot3.jpg" alt="Screenshot 3"></div>
+        </div>
+        <div class="alert alert-warning mt-5 col-12 fs-6"><i class="ion ion-md-warning"></i> لطفا اپلیکیشن<b>مطمئن باش</b> را تنها از لینک‌های رسمی بالا دریافت و نصب کنید.<br><i class="ion ion-md-warning"></i> نسخه‌هایی که از سایر منابع دریافت می‌شوند، ممکن است تغییر یافته، ناامن یا آلوده به بدافزار باشند.<br><i class="ion ion-md-warning"></i> هرگونه خطر و پیامد ناشی از نصب نسخه‌های غیررسمی بر عهده کاربر خواهد بود.</div>
+      </div>
+    </section>
+    <section class="container my-2" id="download">
+      <h2 class="mb-4 text-center">افزونه مرورگر مطمئن باش</h2>
+      <p class="text-center text-muted mb-5"> افزونه<strong>مطمئن باش</strong> برای مرورگرهای اینترنتی طراحی شده تا اصالت درگاه‌های پرداخت اینترنتی را بررسی کند. با نصب این افزونه، از کلاهبرداری‌های اینترنتی هنگام پرداخت آنلاین در امان بمانید.</p>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-lg position-relative">
+            <div class="position-absolute top-0 end-0 mt-2 me-2"><span class="badge bg-success me-1">دسکتاپ</span></div>
+            <div class="card-body text-center"><img class="w-25 mb-4" src="images/chrome.svg" alt="افزونه کروم">
+              <h5>مرورگر گوگل کروم</h5>
+              <p class="text-muted fs-6">امنیت بیشتر در پرداخت‌های اینترنتی</p><a class="btn btn-blue mt-2" href="https://chromewebstore.google.com/detail/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/efhpmpdbeaganelnekhbffjphahncbgn" target="_blank"><i class="ion ion-md-download"></i> دریافت افزونه گوگل کروم</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-lg position-relative">
+            <div class="position-absolute top-0 end-0 mt-2 me-2"><span class="badge bg-success me-1">دسکتاپ</span><span class="badge bg-info">موبایل</span></div>
+            <div class="card-body text-center"><img class="w-25 mb-4" src="images/firefox.svg" alt="افزونه فایرفاکس">
+              <h5>مرورگر فایرفاکس</h5>
+              <p class="text-muted fs-6">امنیت بیشتر در پرداخت‌های اینترنتی</p><a class="btn btn-blue mt-2" href="https://addons.mozilla.org/en-US/firefox/addon/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/" target="_blank"><i class="ion ion-md-download"></i> دریافت افزونه فایرفاکس</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-lg position-relative">
+            <div class="position-absolute top-0 end-0 mt-2 me-2"><span class="badge bg-success me-1">دسکتاپ</span><span class="badge bg-info">موبایل</span></div>
+            <div class="card-body text-center"><img class="w-25 mb-4" src="images/yandex.svg" alt="افزونه یاندکس">
+              <h5>مرورگر یاندکس</h5>
+              <p class="text-muted fs-6">امکان نصب افزونه‌های کروم بر روی مرورگر یاندکس</p><a class="btn btn-blue mt-2" href="https://chrome.google.com/webstore/detail/motmaenbash-%D9%85%D8%B7%D9%85%D8%A6%D9%86-%D8%A8%D8%A7%D8%B4/efhpmpdbeaganelnekhbffjphahncbgn" target="_blank"><i class="ion ion-md-download"></i> دریافت افزونه یاندکس</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container my-2" id="whatsphishing">
+      <h2 class="title-bg" title="فیشینگ چیست؟">فیشینگ چیست؟</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lh-lg fw-light">
+            فیشینگ (Phishing) یکی از رایج‌ترین و خطرناک‌ترین حملات سایبری است که مهاجمان و کلاهبردارها با ایجاد
+            نسخه‌های جعلی از سایت‌ها، درگاه‌های پرداخت و اپلیکیشن‌های موبایل شبیه به نسخه‌های اصلی، کاربران را
+            فریب داده و تلاش می‌کنند اطلاعات حساس شما مانند اطلاعات بانکی، نام کاربری و رمزهای عبور، دارایی کیف
+            پول رمزارز، هویت دیجیتال و... را سرقت می‌کنند. این حملات معمولا از طریق ارسال ایمیل‌های جعلی،
+            پیامک‌های فریبنده یا تبلیغات گمراه‌کننده و انتشار لینک در شبکه‌های اجتماعی و پیام‌رسان‌ها با هدف
+            تشویق کاربر به باز کردن لینک مخرب و یا نصب اپلیکیشن مخرب انجام می‌شوند.
+          </p>
+          <p class="lh-lg fw-bold">هدف اصلی حملات فیشینگ، دستیابی به داده‌های محرمانه کاربران است:
+            <ul class="list-unstyled fs-6">
+              <li><i class="ion ion-md-warning text-warning"></i>اطلاعات کارت‌های بانکی و حساب‌های مالی</li>
+              <li><i class="ion ion-md-warning text-warning"></i>نام کاربری و رمزهای عبور</li>
+              <li><i class="ion ion-md-warning text-warning"></i>اطلاعات هویتی و شخصی</li>
+              <li><i class="ion ion-md-warning text-warning"></i>کدهای تایید دو مرحله‌ای و رمزهای یکبار مصرف</li>
+            </ul>
+          </p>
+          <p class="lh-lg fw-bold mt-4">مهاجمان از روش‌های مختلفی برای فیشینگ استفاده می‌کنند:
+            <ul class="list-unstyled fs-6">
+              <li><i class="ion ion-md-warning text-warning"></i>طراحی صفحات جعلی با ظاهری کاملا مشابه درگاه‌های بانکی و سرویس‌های معتبر</li>
+              <li><i class="ion ion-md-warning text-warning"></i>ارسال ایمیل‌های جعلی و فریبنده با درخواست اطلاعات حساس</li>
+              <li><i class="ion ion-md-warning text-warning"></i>ارسال پیامک‌های فریبنده با پیشنهادات وسوسه‌انگیز همراه با لینک به سایت‌ها و اپلیکیشن‌های جعلی</li>
+              <li><i class="ion ion-md-warning text-warning"></i>انتشار اپلیکیشن‌های مخرب و جعلی در پیام‌رسان‌ها و شبکه‌های اجتماعی</li>
+            </ul>
+          </p>
+          <div class="alert alert-warning mt-4 fs-6"><i class="ion ion-md-warning"></i>کلاهبرداران با استفاده از مهندسی اجتماعی و ترفندهای روانشناختی، کاربران را متقاعد می‌کنند تا بدون
+            آگاهی از خطرات موجود، اطلاعات محرمانه خود را در اختیار آن‌ها قرار دهند.
+          </div>
+        </div>
+        <div class="col-md-6 accordion" id="phishingAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false">حمله فیشینگ چگونه انجام می‌شود؟</button>
+            </h3>
+            <div class="accordion-collapse collapse" id="collapse1" data-bs-parent="#phishingAccordion">
+              <div class="accordion-body">
+                مهاجمان با ارسال ایمیل یا پیام جعلی سعی در فریب کاربران دارند. این پیام‌ها معمولا حاوی
+                لینک‌هایی به صفحات جعلی هستند که شبیه به صفحات واقعی بانک‌ها یا سرویس‌های معتبر طراحی
+                شده‌اند. کاربران با وارد کردن اطلاعات خود در این صفحات، ناخواسته اطلاعاتشان را در اختیار
+                کلاهبرداران قرار می‌دهند.
+                <p>رایج‌ترین روش‌های فیشینگ شامل موارد زیر است:</p>
+                <ul class="list-unstyled">
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>ارسال پیامک‌های فریبنده با وعده‌های دروغین مانند "برنده جایزه شده‌اید" یا "بسته اینترنت رایگان"</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>ساخت صفحات جعلی درگاه پرداخت بانکی برای سرقت اطلاعات کارت</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>انتشار اپلیکیشن‌های مخرب در شبکه‌های اجتماعی و پیام‌رسان‌ها</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>ارسال ایمیل‌های جعلی با هشدارهای اضطراری مانند "مسدود شدن حساب"</li>
                 </ul>
-                </p>
-
-
-
-                <p class="lh-lg fw-bold mt-4">
-                    مهاجمان از روش‌های مختلفی برای فیشینگ استفاده می‌کنند:
-
-                <ul class="list-unstyled fs-6">
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        طراحی صفحات جعلی با ظاهری کاملا مشابه درگاه‌های بانکی و سرویس‌های معتبر
-                    </li>
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        ارسال ایمیل‌های جعلی و فریبنده با درخواست اطلاعات حساس
-                    </li>
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        ارسال پیامک‌های فریبنده با پیشنهادات وسوسه‌انگیز همراه با لینک به سایت‌ها و اپلیکیشن‌های جعلی
-                    </li>
-                    <li>
-                        <i class="ion ion-md-warning text-warning"></i>
-                        انتشار اپلیکیشن‌های مخرب و جعلی در پیام‌رسان‌ها و شبکه‌های اجتماعی
-                    </li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false">چگونه یک پیامک فیشینگ را تشخیص دهیم؟</button>
+            </h3>
+            <div class="accordion-collapse collapse" id="collapse2" data-bs-parent="#phishingAccordion">
+              <div class="accordion-body">برای تشخیص پیامک‌های فیشینگ به این نکات توجه کنید:
+                <ul class="list-unstyled">
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>وجود لینک‌های کوتاه‌شده و مشکوک در متن پیامک</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>وجود اشتباهات املایی و نگارشی در متن.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>ارسال پیامک‌های جعلی با عناوین فریبنده مانند "برنده جایزه شده‌اید" یا "پرداخت عوارض معوقه".</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>پیامک‌های جعلی با ادعای واریز یارانه یا حذف از لیست دریافت‌کنندگان.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>پیامک‌های جعلی به نام قوه قضاییه با درخواست مشاهده پرونده.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>ارسال پیامک از شماره‌های شخصی به جای سرشماره‌های رسمی مانند adliran.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>درخواست اطلاعات شخصی، رمز کارت یا کد تأیید در پیامک.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>استفاده از جملات تهدیدآمیز مانند "در صورت عدم پرداخت، حساب شما مسدود می‌شود".</li>
                 </ul>
-
-                </p>
-
-
-
-
-
-                <div class="alert alert-warning mt-4 fs-6">
-                    <i class="ion ion-md-warning"></i>
-                    کلاهبرداران با استفاده از مهندسی اجتماعی و ترفندهای روانشناختی، کاربران را متقاعد می‌کنند تا بدون
-                    آگاهی از خطرات موجود، اطلاعات محرمانه خود را در اختیار آن‌ها قرار دهند.
-                </div>
+              </div>
             </div>
-            <div class="col-md-6 accordion" id="phishingAccordion">
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse1">
-                            حمله فیشینگ چگونه انجام می‌شود؟
-                        </button>
-                    </h3>
-                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#phishingAccordion">
-                        <div class="accordion-body">
-                            مهاجمان با ارسال ایمیل یا پیام جعلی سعی در فریب کاربران دارند. این پیام‌ها معمولا حاوی
-                            لینک‌هایی به صفحات جعلی هستند که شبیه به صفحات واقعی بانک‌ها یا سرویس‌های معتبر طراحی
-                            شده‌اند. کاربران با وارد کردن اطلاعات خود در این صفحات، ناخواسته اطلاعاتشان را در اختیار
-                            کلاهبرداران قرار می‌دهند.
-
-                            <p>رایج‌ترین روش‌های فیشینگ شامل موارد زیر است:</p>
-
-                            <ul class="list-unstyled">
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> ارسال پیامک‌های فریبنده با
-                                    وعده‌های دروغین مانند "برنده جایزه شده‌اید" یا "بسته اینترنت رایگان"</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> ساخت صفحات جعلی درگاه
-                                    پرداخت بانکی برای سرقت اطلاعات کارت</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> انتشار اپلیکیشن‌های مخرب در
-                                    شبکه‌های اجتماعی و پیام‌رسان‌ها</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> ارسال ایمیل‌های جعلی با
-                                    هشدارهای اضطراری مانند "مسدود شدن حساب"</li>
-
-                            </ul>
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse2">
-                            چگونه یک پیامک فیشینگ را تشخیص دهیم؟
-                        </button>
-                    </h3>
-                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#phishingAccordion">
-                        <div class="accordion-body">
-
-                            برای تشخیص پیامک‌های فیشینگ به این نکات توجه کنید:
-
-
-                            <ul class="list-unstyled">
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i>
-                                    وجود لینک‌های کوتاه‌شده و مشکوک در متن پیامک</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> وجود اشتباهات املایی و
-                                    نگارشی در متن.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> ارسال پیامک‌های جعلی با
-                                    عناوین فریبنده مانند "برنده جایزه شده‌اید" یا "پرداخت عوارض معوقه".</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> پیامک‌های جعلی با ادعای
-                                    واریز یارانه یا حذف از لیست دریافت‌کنندگان.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> پیامک‌های جعلی به نام قوه
-                                    قضاییه با درخواست مشاهده پرونده.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> ارسال پیامک از شماره‌های
-                                    شخصی به جای سرشماره‌های رسمی مانند adliran.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> درخواست اطلاعات شخصی، رمز
-                                    کارت یا کد تأیید در پیامک.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> استفاده از جملات تهدیدآمیز
-                                    مانند "در صورت عدم پرداخت، حساب شما مسدود می‌شود".</li>
-                            </ul>
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse3">
-                            چگونه یک ایمیل فیشینگ را تشخیص دهیم؟
-                        </button>
-                    </h3>
-                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#phishingAccordion">
-                        <div class="accordion-body">
-
-                            برای تشخیص ایمیل‌های فیشینگ به این نکات توجه کنید:
-                            <ul class="list-unstyled">
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی دامنه فرستنده با دقت
-                                    بالا (مثال:
-                                    support@google-support.com به جای @google.com)</li>
-
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> وجود اشتباهات املایی و
-                                    نگارشی در متن</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> درخواست اطلاعات حساس از
-                                    طریق ایمیل</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> وجود لینک‌های کوتاه‌شده و
-                                    مشکوک</li>
-
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> درخواست‌های فوری و
-                                    تهدیدآمیز برای ورود
-                                    اطلاعات حساس</li>
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> خودداری از کلیک روی
-                                    لینک‌های ناشناس و مشکوک</li>
-                            </ul>
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse4">
-                            اپلیکیشن اندروید مطمئن باش چگونه کار می‌کند؟
-                        </button>
-                    </h3>
-                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#phishingAccordion">
-                        <div class="accordion-body">
-
-                            اپلیکیشن اندروید "مطمئن باش" از مکانیزم‌ها و روش‌های زیر برای افزایش امنیت کاربران در برابر
-                            حملات فیشینگ استفاده می‌کند: 🚀
-
-                            <ul class="list-unstyled">
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی خودکار پیامک‌های
-                                    دریافتی و شناسایی پیامک‌های مشکوک بر اساس شماره، متن و لینک‌های داخل پیامک.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> اسکن لینک‌های موجود در
-                                    پیامک‌ها و مقایسه با پایگاه داده فیشینگ برای نمایش هشدار در صورت خطر.</li>
-
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی و هشدار هنگام شناسایی
-                                    اپلیکیشن‌های مشکوک هنگام نصب اپلیکیشن جدید.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> امکان اسکن دستی
-                                    اپلیکیشن‌های نصب‌شده برای شناسایی برنامه‌های مخرب.</li>
-
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> نمایش نکات آموزشی کوتاه و
-                                    کاربردی درباره امنیت در صفحه اصلی برنامه.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی خودکار لینک‌های
-                                    بازشده در مرورگر و هشدار در صورت شناسایی صفحات مشکوک.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> نمایش پیام اطمینان سبز
-                                    هنگام ورود به درگاه‌های پرداخت معتبر شاپرک.</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> هشدار فوری هنگام شناسایی
-                                    وبسایت‌های مشکوک یا فریبنده روی مرورگر کاربر</li>
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> امکان گزارش موارد جدید
-                                    کلاهبرداری توسط کاربران و به‌روزرسانی پایگاه داده به‌صورت مشارکتی.</li>
-
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> به‌روزرسانی مداوم و خودکار
-                                    پایگاه داده برای شناسایی تهدیدات جدید</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> عملکرد برنامه به صورت
-                                    لحظه‌ای و آفلاین بدون نیاز به اینترنت</li>
-
-
-                            </ul>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse5">
-                            افزونه مرورگر مطمئن باش چگونه کار می‌کند؟
-                        </button>
-                    </h3>
-                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#phishingAccordion">
-                        <div class="accordion-body">
-
-                            افزونه مرورگر "مطمئن باش" از روش‌های زیر برای حفاظت بیشتر از شما در مقابل فیشینگ استفاده
-                            می‌کند:
-
-                            <ul class="list-unstyled">
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی خودکار آدرس درگاه‌های
-                                    پرداخت و اطمینان از اصالت آن‌ها</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> نمایش نماد <span
-                                        class="text-success"><i class="ion ion-md-checkmark-circle"></i></span> برای
-                                    درگاه‌های پرداخت معتبر</li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse6">
-                            راه‌های مقابله با فیشینگ
-
-                        </button>
-                    </h3>
-                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#phishingAccordion">
-                        <div class="accordion-body">
-
-                            برای محافظت در برابر حملات فیشینگ، اقدامات زیر را انجام دهید:
-
-                            <ul class="list-unstyled">
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> افزایش سطح آگاهی خود درباره
-                                    روش‌های جدید فیشینگ و هشدار به اطرافیان</li>
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> بررسی دقیق سایت‌ها قبل از
-                                    وارد
-                                    کردن اطلاعات</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> دانلود برنامه‌های موبایل
-                                    فقط از منابع رسمی و معتبر</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> توجه به هشدارهای امنیتی
-                                    مرورگر، آنتی‌ویروس و سایر ابزارهای امنیتی</li>
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> عدم وارد کردن اطلاعات در
-                                    سایت‌های ناشناس و مشکوک</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> نادیده گرفتن و حذف پیامک‌ها
-                                    و ایمیل‌های مشکوک</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> عدم کلیک رو لینک‌های ناشناس
-                                    و مشکوک</li>
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> استفاده از افزونه‌های
-                                    مرورگر مانند
-                                    "مطمئن باش"</li>
-
-                                <li><i class="ion ion-md-checkmark-circle text-success"></i> استفاده از اپلیکیشن موبایل
-                                    "مطمئن باش"</li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false">چگونه یک ایمیل فیشینگ را تشخیص دهیم؟</button>
+            </h3>
+            <div class="accordion-collapse collapse" id="collapse3" data-bs-parent="#phishingAccordion">
+              <div class="accordion-body">برای تشخیص ایمیل‌های فیشینگ به این نکات توجه کنید:
+                <ul class="list-unstyled">
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>بررسی دامنه فرستنده با دقت بالا (مثال: support@google-support.com به جای @google.com)</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>وجود اشتباهات املایی و نگارشی در متن</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>درخواست اطلاعات حساس از طریق ایمیل</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>وجود لینک‌های کوتاه‌شده و مشکوک</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>درخواست‌های فوری و تهدیدآمیز برای ورود اطلاعات حساس</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>خودداری از کلیک روی لینک‌های ناشناس و مشکوک</li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false">اپلیکیشن اندروید مطمئن باش چگونه کار می‌کند؟</button>
+            </h3>
+            <div class="accordion-collapse collapse" id="collapse4" data-bs-parent="#phishingAccordion">
+              <div class="accordion-body">اپلیکیشن اندروید "مطمئن باش" از مکانیزم‌ها و روش‌های زیر برای افزایش امنیت کاربران در برابر حملات فیشینگ استفاده می‌کند: 🚀
+                <ul class="list-unstyled">
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>بررسی خودکار پیامک‌های دریافتی و شناسایی پیامک‌های مشکوک بر اساس شماره، متن و لینک‌های داخل پیامک.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>اسکن لینک‌های موجود در پیامک‌ها و مقایسه با پایگاه داده فیشینگ برای نمایش هشدار در صورت خطر.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>بررسی و هشدار هنگام شناسایی اپلیکیشن‌های مشکوک هنگام نصب اپلیکیشن جدید.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>امکان اسکن دستی اپلیکیشن‌های نصب‌شده برای شناسایی برنامه‌های مخرب.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>نمایش نکات آموزشی کوتاه و کاربردی درباره امنیت در صفحه اصلی برنامه.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>بررسی خودکار لینک‌های بازشده در مرورگر و هشدار در صورت شناسایی صفحات مشکوک.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>نمایش پیام اطمینان سبز هنگام ورود به درگاه‌های پرداخت معتبر شاپرک.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>هشدار فوری هنگام شناسایی وبسایت‌های مشکوک یا فریبنده روی مرورگر کاربر</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>امکان گزارش موارد جدید کلاهبرداری توسط کاربران و به‌روزرسانی پایگاه داده به‌صورت مشارکتی.</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>به‌روزرسانی مداوم و خودکار پایگاه داده برای شناسایی تهدیدات جدید</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>عملکرد برنامه به صورت لحظه‌ای و آفلاین بدون نیاز به اینترنت</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false">افزونه مرورگر مطمئن باش چگونه کار می‌کند؟</button>
+            </h3>
+            <div class="accordion-collapse collapse" id="collapse5" data-bs-parent="#phishingAccordion">
+              <div class="accordion-body">افزونه مرورگر "مطمئن باش" از روش‌های زیر برای حفاظت بیشتر از شما در مقابل فیشینگ استفاده می‌کند:
+                <ul class="list-unstyled">
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>بررسی خودکار آدرس درگاه‌های پرداخت و اطمینان از اصالت آن‌ها</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>نمایش نماد <span class="text-success"><i class="ion ion-md-checkmark-circle"></i></span>برای درگاه‌های پرداخت معتبر</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true">راه‌های مقابله با فیشینگ</button>
+            </h3>
+            <div class="accordion-collapse collapse show" id="collapse6" data-bs-parent="#phishingAccordion">
+              <div class="accordion-body">برای محافظت در برابر حملات فیشینگ، اقدامات زیر را انجام دهید:
+                <ul class="list-unstyled">
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>افزایش سطح آگاهی خود درباره روش‌های جدید فیشینگ و هشدار به اطرافیان</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>بررسی دقیق سایت‌ها قبل از وارد کردن اطلاعات</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>دانلود برنامه‌های موبایل فقط از منابع رسمی و معتبر</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>توجه به هشدارهای امنیتی مرورگر، آنتی‌ویروس و سایر ابزارهای امنیتی</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>عدم وارد کردن اطلاعات در سایت‌های ناشناس و مشکوک</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>نادیده گرفتن و حذف پیامک‌ها و ایمیل‌های مشکوک</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>عدم کلیک رو لینک‌های ناشناس و مشکوک</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>استفاده از افزونه‌های مرورگر مانند "مطمئن باش"</li>
+                  <li><i class="ion ion-md-checkmark-circle text-success"></i>استفاده از اپلیکیشن موبایل "مطمئن باش"</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
-    <section id="donate" class="container my-2">
-        <div class="donate text-center">
-            <h2 class="title-bg" title="حمایت مالی">حمایت مالی</h2>
-            <p>با حمایت مالی خود به توسعه و بهبود مستمر این پروژه کمک کنید.</p>
-            <a href="#" class="btn btn-warning">حمایت مالی</a>
-        </div>
+    <section class="container my-2" id="donate">
+      <div class="donate text-center">
+        <h2 class="title-bg" title="حمایت مالی">حمایت مالی</h2>
+        <p>با حمایت مالی خود به توسعه و بهبود مستمر این پروژه کمک کنید.</p><a class="btn btn-warning" href="https://milad.nu/page/donate" target="_blank">حمایت مالی</a>
+      </div>
     </section>
-
-    <section id="report" class="container my-2 text-center">
-        <h2 class="title-bg mb-4" title="گزارش پیامک، لینک یا اپلیکیشن کلاهبرداری">گزارش پیامک، لینک یا اپلیکیشن
-            کلاهبرداری</h2>
-        <p class="lh-lg fw-light">
-            هرچه اطلاعات بیشتری در برنامه <strong>مطمئن باش</strong> جمع‌آوری شود، دامنه تشخیص آن گسترده‌تر خواهد بود.
-            بنابراین، در راستای تکمیل این اطلاعات و شناسایی الگوهای بیشتر، لطفا اگر پیامک کلاه‌برداری/فیشینگ دریافت
-            کردید یا به لینک/اپلیکیشن کلاهبرداری برخورد کردید، از طریق لینک زیر آن را گزارش کنید:
-        </p>
-
-        <a href="https://forms.gle/odNaY6jeks2eqZDZA" target="_blank" class="btn btn-blue"
-            title="گزارش کلاهبرداری">ارسال گزارش کلاهبرداری</a>
+    <section class="container my-2 text-center" id="report">
+      <h2 class="title-bg mb-4" title="گزارش پیامک، لینک یا اپلیکیشن کلاهبرداری">گزارش پیامک، لینک یا اپلیکیشن کلاهبرداری</h2>
+      <p class="lh-lg fw-light"> هرچه اطلاعات بیشتری در برنامه<strong>مطمئن باش</strong> جمع‌آوری شود، دامنه تشخیص آن گسترده‌تر خواهد بود. بنابراین، در راستای تکمیل این اطلاعات و شناسایی الگوهای بیشتر، لطفا اگر پیامک کلاه‌برداری/فیشینگ دریافت کردید یا به لینک/اپلیکیشن کلاهبرداری برخورد کردید، از طریق لینک زیر آن را گزارش کنید:</p><a class="btn btn-blue" href="https://forms.gle/odNaY6jeks2eqZDZA" target="_blank" title="گزارش کلاهبرداری">ارسال گزارش کلاهبرداری</a>
     </section>
-
-
-
-
-    <section id="media" class="container my-2">
-        <h2 class="title-bg text-center mb-3" title="مطمئن باش در رسانه‌ها">مطمئن باش در رسانه‌ها</h2>
-
-        <div class="media-logos text-center">
-            <!-- این بخش برای نمایش لوگوی رسانه‌های منتشرکننده افزونه مطمئن باش استفاده می‌شود -->
-            <!--
-            <a class="mx-2" href="#" target="_blank"><img src="https://picsum.photos/100/100?random=1"></a>
-            <a class="mx-2" href="#" target="_blank"><img src="https://picsum.photos/100/100?random=2"></a>
-            <a class="mx-2" href="#" target="_blank"><img src="https://picsum.photos/100/100?random=3"></a>
-            <a class="mx-2" href="#" target="_blank"><img src="https://picsum.photos/100/100?random=4"></a>
-         -->
-        </div>
-
-        <hr>
-
-
-        <p class="text-center lh-lg">
-            <strong>مطمئن باش</strong> با هدف افزایش امنیت کاربران ایرانی در فضای مجازی توسعه یافته است. حضور این ابزار
-            در
-            رسانه‌های مختلف، نقش مهمی در آگاهی‌بخشی عمومی و کاهش کلاهبرداری‌های اینترنتی دارد. اگر خبرنگار، وبلاگ‌نویس
-            یا
-            تولیدکننده محتوا هستید، می‌توانید با معرفی این افزونه به مخاطبان خود، در ارتقای امنیت سایبری کاربران ایرانی
-            سهیم باشید.
-            <br>
-            برای دریافت اطلاعات بیشتر یا هماهنگی جهت تهیه گزارش و مصاحبه، با ما در ارتباط باشید: hello [at] Motmaenbash
-            [dot] ir
-        </p>
-
-        <p class="text-center fs-5 mb-4">
-            با اشتراک‌گذاری «مطمئن باش» در شبکه‌های اجتماعی و معرفی آن به دوستان و آشنایان، به گسترش فرهنگ امنیت سایبری
-            و
-            محافظت از هموطنان در برابر کلاهبرداری‌های اینترنتی کمک کنید.
-        </p>
-
+    <section class="container my-2" id="media">
+      <h2 class="title-bg text-center mb-3" title="مطمئن باش در رسانه‌ها">مطمئن باش در رسانه‌ها</h2>
+      <div class="media-logos text-center"></div>
+      <hr>
+      <p class="text-center lh-lg"><strong>مطمئن باش</strong> با هدف افزایش امنیت کاربران ایرانی در فضای مجازی توسعه یافته است. حضور این ابزار در رسانه‌های مختلف، نقش مهمی در آگاهی‌بخشی عمومی و کاهش کلاهبرداری‌های اینترنتی دارد. اگر خبرنگار، وبلاگ‌نویس یا تولیدکننده محتوا هستید، می‌توانید با معرفی این افزونه به مخاطبان خود، در ارتقای امنیت سایبری کاربران ایرانی سهیم باشید.<br> برای دریافت اطلاعات بیشتر یا هماهنگی جهت تهیه گزارش و مصاحبه، با ما در ارتباط باشید: hello [at] Motmaenbash [dot] ir</p>
+      <p class="text-center fs-5 mb-4"> با اشتراک‌گذاری «مطمئن باش» در شبکه‌های اجتماعی و معرفی آن به دوستان و آشنایان، به گسترش فرهنگ امنیت سایبری و محافظت از هموطنان در برابر کلاهبرداری‌های اینترنتی کمک کنید.</p>
     </section>
-
     <footer class="bg-dark text-white py-3">
-        <div class="container">
-            
-            <p class="text-center mb-0 fs-6">
-                توسعه داده شده با <i class="ion ion-md-heart text-danger"></i> توسط <a href="https://milad.nu"
-                    target="_blank">میلاد نوری</a> برای مردم ایران
-            </p>
+      <div class="container">
+        <div class="row g-4 fs-6">
+          <div class="col-md-3">
+            <h5 class="mb-1">دسترسی سریع</h5>
+            <ul class="list-unstyled">
+              <li><a href="#android-app">اپلیکیشن اندروید</a></li>
+              <li><a href="#download">افزونه مرورگر</a></li>
+              <li><a href="https://milad.nu/page/donate" target="_blank">حمایت مالی</a></li>
+              <li><a href="https://forms.gle/odNaY6jeks2eqZDZA" target="_blank">ارسال گزارش</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-1">اطلاعات بیشتر</h5>
+            <ul class="list-unstyled">
+              <li><a href="faq.html">سوال‌های پرتکرار</a></li>
+              <li><a href="faq.html#trust">اعتماد به مطمئن باش؟!</a></li>
+              <li><a href="about.html">درباره ما</a></li>
+              <li><a href="https://t.me/miladnourichannel" target="_blank">پیگیری اخبار</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 fs-6">
+            <h5 class="mb-1">مطمئن باش به صورت متن باز در گیت‌هاب منتشر شده است:</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/miladnouri/motmaenbash-android" target="_blank">اندروید</a></li>
+              <li><a href="https://github.com/miladnouri/motmaenbash-chrome" target="_blank">کروم</a></li>
+              <li><a href="https://github.com/miladnouri/motmaenbash-firefox" target="_blank">فایرفاکس</a></li>
+              <li><a href="https://github.com/miladnouri/motmaenbash-website" target="_blank">وب‌سایت</a></li>
+            </ul>
+          </div>
         </div>
+        <hr class="my-3">
+        <p class="text-center mb-0 fs-6 footer-copyright">توسعه داده شده با <i class="ion ion-md-heart text-danger"></i> توسط <a href="https://milad.nu" target="_blank">میلاد نوری </a>برای مردم ایران</p>
+      </div>
     </footer>
-
-    <script type="text/javascript" src="js/main.js?v=1.0.1"></script>
-</body>
-
+    <script src="js/bootstrap.bundle.min.js?v=5.3.3"></script>
+    <script src="js/main.js?v=1.0.1"></script>
+  </body>
 </html>
