@@ -1,0 +1,78 @@
+nav.navbar.navbar-expand-lg
+  .container
+
+    |
+    |
+    a.navbar-brand(href="https://motmaenbash.ir") مطمئن باش
+    button.navbar-toggler(
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    )
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbarNav
+      ul.navbar-nav.ms-auto
+        li.nav-item
+          a.nav-link(href="#whatsphishing" title="فیشینگ چیست؟") 
+            b فیشینگ 
+            | چیست؟
+        li.nav-item
+          a.nav-link(href="#donate")
+            i.ion.ion-md-heart
+            |  حمایت مالی
+        li.nav-item.dropdown#downloadMenu
+          a.nav-link.dropdown-toggle(
+            href="#" 
+            role="button" 
+            data-bs-toggle="dropdown"
+          )
+            i.ion.ion-md-download
+            |  دانلود
+          ul.dropdown-menu
+            |
+            | <!-- Android App -->
+            li
+              h6.dropdown-header اپلیکیشن اندروید
+            li
+              a.dropdown-item(
+                href="https://play.google.com/store/apps/details?id=" 
+                target="_blank"
+              )
+                | گوکل‌پلی
+                span.badge.bg-info.text-white.ms-2 به زودی
+            li
+              a.dropdown-item(
+                href="https://cafebazaar.ir/app/" 
+                target="_blank"
+              )
+                | بازار
+                span.badge.bg-info.text-white.ms-2 به زودی
+            li
+              hr.dropdown-divider
+            |
+            | <!-- Browser Extensions -->
+            li
+              h6.dropdown-header افزونه مرورگر
+            li
+              a.dropdown-item(
+                href="https://chrome.google.com/webstore/detail/motmaenbash-مطمئن-باش/efhpmpdbeaganelnekhbffjphahncbgn" 
+                target="_blank"
+              ) کروم
+            li
+              a.dropdown-item(
+                href="https://addons.mozilla.org/en-US/firefox/addon/motmaenbash-مطمئن-باش/" 
+                target="_blank"
+              ) فایرفاکس
+            li
+              a.dropdown-item(
+                href="https://chrome.google.com/webstore/detail/motmaenbash-مطمئن-باش/efhpmpdbeaganelnekhbffjphahncbgn" 
+                target="_blank"
+              ) یاندکس
+        li.nav-item
+          a.nav-link(
+            href="https://github.com/miladnouri/motmaenbash-android" 
+            target="_blank" 
+            title="مخزن گیت‌هاب"
+          )
+            i.ion.ion-logo-github
+            |  گیت‌هاب

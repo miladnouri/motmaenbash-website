@@ -1,0 +1,226 @@
+extends ../layout/base.pug
+
+block variables
+  - var title = 'سوال‌های متداول | مطمئن باش'
+  - var description = 'پاسخ به سوالات رایج درباره فیشینگ، اعتماد به مطمئن باش و سطح دسترسی‌های اپلیکیشن اندروید.'
+  - var keywords = 'سوالات متداول, فیشینگ, مطمئن باش, افزونه مرورگر, اپلیکیشن اندروید, کلاهبرداری اینترنتی'
+  - var url = 'https://motmaenbash.ir/faq.html'
+
+block content
+  section.container.my-2
+    h1.text-center.mb-3 سوال‌های متداول
+    .row.justify-content-center
+      .col-12
+        .d-flex.flex-wrap.gap-2.mb-3
+          a.btn.btn-primary(href="#general") سوال‌های عمومی فیشینگ
+          a.btn.btn-primary(href="#motmaen-bash") عملکرد مطمئن باش
+          a.btn.btn-primary(href="#trust") اعتماد به مطمئن باش؟
+          a.btn.btn-primary(href="#android-app") دسترسی‌های اندروید
+
+        #faqAccordion.accordion
+
+          // Section 1: General Questions
+          h3#general.mt-3.mb-3.pb-2.border-bottom
+            i.ion.ion-md-shield.text-primary.me-2
+            | سوال‌های عمومی فیشینگ
+
+
+          .accordion-item
+            h3.accordion-header
+              button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                aria-expanded="false")
+                i.ion.ion-md-shield.me-2
+                | فیشینگ چیست و چگونه انجام می‌شود؟
+            #collapse1.accordion-collapse.collapse(data-bs-parent="#faqAccordion")
+              .accordion-body
+                p فیشینگ یک روش کلاهبرداری اینترنتی است که مهاجمان با جعل هویت سازمان‌ها و خدمات معتبر و فریب کاربر، اطلاعات حساس آن‌ها مانند اطلاعات هویتی، اطلاعات مالی و بانکی، رمزهای عبور و... را سرقت می‌کنند.
+
+                ul.list-check
+                  li مهاجمان خود را به عنوان نهادخدمات‌دهنده‌ها و نهادهای معتبر جا می‌زنند
+                  li از طریق کانال‌های دیجیتال مانند ایمیل، پیامک و شبکه‌های اجتماعی حمله می‌کنند
+                  li صفحات جعلی‌ای طراحی می‌کنند که مشابه درگاه‌های پرداخت یا سرویس‌های شناخته‌شده است
+                  li قربانیان را ترغیب می‌کنند اطلاعات حساس خود را وارد کنند
+
+                .alert.alert-info.mt-3
+                  strong مثال متداول:
+                  | دریافت پیامک جعلی با عنوان "ابلاغیه قضایی" که کاربر را به یک صفحه تقلبی هدایت می‌کند تا اپلیکیشن مخرب دانلود کند یا اطلاعات بانکی خود را وارد نماید.
+
+
+                hr
+
+                .row.mt-3
+                  .col-md-8
+                    h6 مهاجمان از تکنیک‌های مختلف برای فریب کاربران استفاده می‌کنند، از جمله:
+                    ul.list-unstyled
+                      li
+                        i.ion.ion-md-warning.text-warning.me-1
+                        | ارسال پیامک‌های فریبنده با وعده‌های دروغین مانند "برنده جایزه شدید" یا "دریافت بسته اینترنت رایگان".
+                      li
+                        i.ion.ion-md-warning.text-warning.me-1
+                        | طراحی صفحات جعلی درگاه پرداخت بانکی برای سرقت اطلاعات کارت.
+                      li
+                        i.ion.ion-md-warning.text-warning.me-1
+                        | انتشار اپلیکیشن‌های مخرب در شبکه‌های اجتماعی و پیام‌رسان‌ها.
+                      li
+                        i.ion.ion-md-warning.text-warning.me-1
+                        | ارسال ایمیل‌های جعلی با هشدارهای اضطراری مانند "مسدود شدن حساب" یا "نیاز به تأیید فوری اطلاعات".
+
+                    .alert.alert-warning.mt-3
+                      i.ion.ion-md-warning.me-2
+                      | کاربران با وارد کردن اطلاعات در این صفحات، اطلاعات خود را در اختیار کلاهبرداران می‌گذارند
+
+                  .col-md-4
+                    .card.bg-light
+                      .card-body
+                        h6.text-danger روش‌های شایع فیشینگ:
+                        ul.list-check
+                          li پیامک‌های جعلی و فریبنده
+                          li صفحات بانکی جعلی
+                          li اپلیکیشن‌های مخرب
+                          li ایمیل‌های اضطراری
+
+
+          .accordion-item
+            h3.accordion-header
+              button.accordion-button.collapsed(
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+                aria-expanded="false"
+              ) چگونه یک پیامک فیشینگ را تشخیص دهیم؟
+            #collapse2.accordion-collapse.collapse(data-bs-parent="#faqAccordion")
+              .accordion-body
+                h6
+                  | برای تشخیص پیامک‌های فیشینگ به این نکات توجه کنید:
+                ul.list-unstyled
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | وجود اشتباهات املایی و نگارشی در متن پیامک
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | وجود لینک‌های کوتاه‌شده و مشکوک در متن پیامک
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | ارسال پیامک‌های جعلی با عناوین فریبنده مانند "برنده جایزه شده‌اید" یا "پرداخت عوارض معوقه"
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | پیامک‌های جعلی با ادعای واریز یارانه یا حذف از لیست دریافت‌کنندگان
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | پیامک‌های جعلی به نام قوه قضاییه با درخواست مشاهده ابلاغیه و پرونده
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | ارسال پیامک از شماره‌های شخصی به جای سرشماره‌های رسمی مانند adliran و...
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | درخواست اطلاعات شخصی، رمز کارت یا کد تأیید در پیامک
+                  li
+                    i.ion.ion-md-warning.text-warning.me-1
+                    | استفاده از جملات تهدیدآمیز مانند "در صورت عدم پرداخت، حساب شما مسدود می‌شود"
+
+
+
+
+          // Motmaenbash
+          h3#motmaen-bash.mt-3.mb-3.pb-2.border-bottom
+            i.fas.fa-mobile-alt.text-info.me-2
+            | عملکرد مطمئن باش
+
+
+          .accordion-item
+            h3.accordion-header
+              button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse17") آیا این اپلیکیشن رایگان است؟
+            #collapse17.accordion-collapse.collapse(data-bs-parent="#faqAccordion")
+              .accordion-body
+                |  بله، این اپلیکیشن کامل رایگان است و شما می‌توانید بدون هیچ هزینه‌ای از آن استفاده کنید.
+
+
+          //Trust
+          h3#trust.mt-3 اعتماد به مطمئن باش؟
+
+          .accordion-item
+            h3.accordion-header
+              button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false")
+                i.ion.ion-md-lock.me-2
+                | آیا مطمئن باش امن است؟
+            #collapse18.accordion-collapse.collapse(data-bs-parent="#faqAccordion")
+              .accordion-body
+                .row
+                  .col-md-8
+                    p.fw-bold بله، مطمئن باش یک پروژه متن‌باز (Open Source) است و تمام کدهای آن در گیت‌هاب قابل مشاهده و بررسی است.
+                    p
+                      | ویژگی‌های امنیتی کلیدی مطمئن باش:
+                    ul.list-unstyled
+                      li
+                        i.ion.ion-md-checkmark-circle.text-success
+                        | کد کاملاً متن‌باز و قابل بررسی توسط کارشناسان امنیت
+                      li
+                        i.ion.ion-md-checkmark-circle.text-success
+                        | بدون سرور مرکزی - اطلاعات دیتابیس از یک ریپازیتوری گیت‌هاب دریافت می‌شود
+                      li
+                        i.ion.ion-md-checkmark-circle.text-success
+                        | عدم ارسال داده‌های کاربر به سرور یا شخص ثالث
+                      li
+                        i.ion.ion-md-checkmark-circle.text-success
+                        | امکان کنترل دسترسی‌ها توسط کاربر
+                      li
+                        i.ion.ion-md-checkmark-circle.text-success
+                        | بررسی و تأیید توسط متخصصان امنیت و مرکز ماهر
+                  .col-md-4
+                    .card.bg-light
+                      .card-body.text-center
+                        i.fas.fa-shield-alt.fa-3x.text-success.mb-3
+                        h5 متن‌باز و قابل اعتماد
+                        a.btn.btn-sm.btn-outline-primary.mt-2(href="https://github.com/miladnouri/motmaenbash" target="_blank")
+                          i.fab.fa-github.me-1
+                          | مشاهده کد در گیت‌هاب
+
+          .accordion-item
+            h3.accordion-header
+              button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false")
+                i.ion.ion-md-lock.me-2
+                | آیا مطمئن باش از اطلاعات شخصی من استفاده می‌کند؟
+            #collapse18.accordion-collapse.collapse(data-bs-parent="#faqAccordion")
+              .accordion-body
+                | خیر، مطمئن باش یک پروژه متن‌باز است و هیچ اطلاعاتی از کاربران ذخیره یا ارسال نمی‌کند.
+
+
+          //Android App Permissions
+          h3#android-app.mt-3.mb-3.pb-2.border-bottom سطح دسترسی‌های اپلیکیشن اندروید مطمئن باش
+          .accordion-item
+            h3.accordion-header
+              button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse20")
+                i.fas.fa-sms.text-warning.me-2
+                | چرا دسترسی به پیامک‌ها نیاز است؟
+            #collapse20.accordion-collapse.collapse(data-bs-parent="#faqAccordion")
+              .accordion-body
+                |  این دسترسی برای بررسی خودکار پیامک‌های دریافتی و شناسایی پیامک‌های مشکوک استفاده می‌شود.
+                .alert.alert-info
+                  strong نکته امنیتی:
+                  |  این دسترسی فقط برای خواندن پیامک‌هاست و امکان ارسال نداریم
+         
+         
+         
+
+          .accordion-item
+            h3.accordion-header
+              button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse29")
+                i.fas.fa-layer-group.me-2
+                | آیا غیرفعال کردن برخی دسترسی‌های اپلیکیشن امکان‌پذیر است؟
+            #collapse29.accordion-collapse.collapse(data-bs-parent="#faqAccordion")
+              .accordion-body
+                |  بله، می‌توانید برخی از دسترسی‌های اپلیکیشن را غیرفعال کنید، اما این کار ممکن است برخی از قابلیت‌های اپلیکیشن را محدود کند. برای مثال، اگر دسترسی به پیامک‌ها را غیرفعال کنید، اپلیکیشن نمی‌تواند پیامک‌های فیشینگ را شناسایی کند. توصیه می‌کنیم برای بهره‌مندی از تمام قابلیت‌های امنیتی، دسترسی‌های مورد نیاز را فعال نگه دارید.
+
+
+
+
+
+  include ../layout/inc_section_donate
+
+block styles
+  style.
+
+    .card.bg-light {
+      border: 1px solid rgba(0,0,0,0.125);
+      border-radius: 0.5rem;
+    }

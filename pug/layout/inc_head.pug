@@ -1,0 +1,43 @@
+title=title
+meta(charset="UTF-8")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+meta(http-equiv="X-UA-Compatible" content="ie=edge")
+meta(name="theme-color" content="#1261A7")
+
+// SEO Meta Tags
+meta(name="description" content=description)
+meta(name="keywords" content=keywords)
+meta(name="robots" content="index, follow")
+meta(name="author" content="Milad Nouri")
+
+// Open Graph Tags
+meta(property="og:type" content="website")
+meta(property="og:url" content=url)
+meta(property="og:title" content=title)
+meta(property="og:description" content=description)
+meta(property="og:image" content="https://motmaenbash.ir/images/logo.svg")
+meta(property="og:locale" content="fa_IR")
+
+// Twitter Meta Tags
+meta(name="twitter:card" content="summary_large_image")
+meta(property="twitter:url" content=url)
+meta(name="twitter:title" content=title)
+meta(name="twitter:description" content=description)
+meta(name="twitter:image" content="https://motmaenbash.ir/images/logo.svg")
+
+// Other required meta tags
+link(rel="canonical" href=url)
+link(rel="stylesheet" href="css/bootstrap.rtl.min.css?v=v5.3.3")
+link(rel="stylesheet" href="css/style.css?v=1.0.2")
+
+script(type="application/ld+json").
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "مطمئن باش",
+    "url": "https://motmaenbash.ir",
+    "logo": "https://motmaenbash.ir/images/logo.svg",
+    "sameAs": [
+      "https://github.com/miladnouri/motmaenbash-website"
+    ]
+  }
