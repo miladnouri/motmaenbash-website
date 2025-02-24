@@ -23,6 +23,9 @@ body {
     padding: 0;
     font-size: 1.1rem;
     font-weight: 400;
+    /* nav heigth */
+    padding-top: 60px;
+
 }
 
 a {
@@ -80,7 +83,8 @@ a {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: transparent !important;
+    /* background: transparent !important; */
+    background: var(--bs-blue-dark) !important;
     transition: all 0.3s ease-in-out;
 }
 
@@ -158,6 +162,7 @@ a {
     justify-content: center;
     text-align: center;
     color: white;
+    margin-top: -60px;
 }
 
 .hero-section .logo {
