@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('ionicons.min.css');
+@import url('fontawesome.all.min.css');
 
 :root {
     --bs-blue: rgb(19, 109, 188);

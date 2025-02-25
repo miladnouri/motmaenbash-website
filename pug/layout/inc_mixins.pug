@@ -1,0 +1,15 @@
+mixin accordion-header(id, icon, title)
+  h3(id=id class="mt-3 mb-3 pb-2 border-bottom")
+    i(class=`${icon} me-2`)
+    | #{title}
+    
+    
+mixin accordion-item(id, icon, title)
+  .accordion-item
+    h3.accordion-header
+      button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target=`#${id}` aria-expanded="false")
+        i(class=`${icon} me-2`)
+        | #{title}
+    .accordion-collapse.collapse(id=id data-bs-parent="#faqAccordion")
+      .accordion-body
+        block
