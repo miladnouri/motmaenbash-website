@@ -4,6 +4,7 @@
 :root {
     --bs-blue: rgb(19, 109, 188);
     --bs-blue-dark: rgb(18, 97, 167);
+    
 }
 
 @font-face {
@@ -31,6 +32,12 @@ body {
 a {
     text-decoration: none;
 }
+
+::selection {
+    background: var(--bs-blue);
+    color: white;
+}
+
 
 /* Buttons */
 .btn {
