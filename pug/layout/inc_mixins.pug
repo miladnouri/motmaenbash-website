@@ -11,5 +11,5 @@ mixin accordion-item(id, icon, title)
         i(class=`${icon} me-2`)
         | #{title}
     .accordion-collapse.collapse(id=id data-bs-parent="#faqAccordion")
-      .accordion-body
+      .accordion-body.fs-6
         block

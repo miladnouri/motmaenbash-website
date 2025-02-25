@@ -250,7 +250,10 @@ block content
                 | بررسی خودکار آدرس درگاه‌های پرداخت
               li
                 i.fas.fa-check-double.text-success.me-1
-                | نمایش نماد سبزرنگ در صورت اطمینان از اصالت درگاه پرداخت
+                | نمایش نماد سبزرنگ
+                span.text-success
+                  i.fas.fa-circle-check.text-success.mx-1
+                | در صورت اطمینان از اصالت درگاه پرداخت
 
           +accordion-item("collapse7", "fas fa-flag", "چگونه می‌توانم فیشینگ و کلاهبرداری جدید را گزارش کنم؟")
             .row
@@ -367,11 +370,3 @@ block content
             |   مطمئن باش با هدف مقابله با فیشینگ طراحی شده و تمرکز خود را بر شناسایی پیامک‌های مشکوک، سایت‌های فیشینگ و پیاپلیکیشن‌های مخرب گذاشته است و جایگزین آنتی‌ویروس نیست.
 
   include ../layout/inc_section_donate
-
-block styles
-  style.
-
-    .card.bg-light {
-      border: 1px solid rgba(0,0,0,0.125);
-      border-radius: 0.5rem;
-    }

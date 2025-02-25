@@ -393,6 +393,12 @@ footer ul li a:hover {
     color: #07c9ff;
 }
 
+.card.bg-light {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
+}
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .hero-content h1 {
