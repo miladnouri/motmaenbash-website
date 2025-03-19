@@ -49,6 +49,7 @@ If you find MotmaenBash useful, You can support it by donate:
 - [Twitter](https://twitter.com/miladnu)
 - [Telegram](https://t.me/miladnourichannel)
 - [Youtube](https://youtube.com/miladnu)
+- [Instagram](https://instagram.com/milad_nouri)
 
 
 
