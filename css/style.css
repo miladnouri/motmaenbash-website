@@ -182,8 +182,10 @@ canvas {
 }
 
 .hero-section .logo {
-    width: 170px;
+    width: 190px;
     transition: transform 0.3s ease;
+    filter: grayscale(100%) brightness(1000%);
+
 }
 
 
