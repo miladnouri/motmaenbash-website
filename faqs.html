@@ -390,7 +390,12 @@
                   <ul>
                     <li>برای گزارش خطاها و کرش‌های احتمالی از سرویس Crashlytics فایربیس (متعلق به گوگل) استفاده می‌شود.</li>
                     <li>برای اطلاعات آماری کلی، از سرویس Analytics فایربیس (متعلق به گوگل) استفاده شده است.</li>
-                    <li>اطلاعات آماری شامل شمارش برخی رویدادها مانند تعداد نمایش هشدارها می‌شود، اما هیچ‌گونه داده‌ای شامل مجتوا و جزییات هشدار‌ها، اطلاعات شناسایی‌کننده‌ و... از کاربران ذخیره یا ارسال نمی‌شود.</li>
+                    <li>اطلاعات آماری شامل شمارش برخی رویدادها مانند تعداد نمایش هشدارها می‌شود، اما هیچ‌گونه داده‌ای شامل محتوای هشدارها، جزییات فنی یا اطلاعات شناسایی‌کننده از کاربران ذخیره یا ارسال نمی‌شود.</li>
+                    <li>کتابخانه‌های آماری فایربیس متعلق به گوگل، برای استفاده‌های آماری، به‌صورت خودکار برخی دسترسی‌های مربوط به تبلیغات را به برنامه اضافه کنمی‌کنندند. ما برای حفظ حریم خصوصی کاربران، این دسترسی‌ها را نیز به‌صورت دستی از طریق کدهای زیر از فایل مانیفست برنامه حذف کرده‌ایم:
+                      <div class="code-box bg-light border rounded p-3 mt-2">
+                        <pre class="mb-0"><code class="float-end text-end" dir="ltr">&lt;!-- Remove permissions automatically added by Firebase and Google Play Services --&gt;<br>&lt;uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" tools:node="remove" /&gt;</code></pre>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
