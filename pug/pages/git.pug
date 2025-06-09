@@ -1,0 +1,103 @@
+extends ../layout/base.pug
+
+block variables
+  - var title = 'lمخزن کد | مطمئن باش'
+  - var description = 'اطلاعات بیشتر درباره اپلیکیشن و افزونه مطمئن باش.'
+  - var keywords = 'MotmaenBash, مطمئن باش, ضد فیشینگ, افزونه مرورگر, اپلیکیشن اندروید, کلاهبرداری اینترنتی, فیشینگ'
+  - var url = 'https://motmaenbash.ir/about.html'
+
+block content
+  section.container.my-2
+    h1.text-center.mb-4 مخزن‌های کد مطمئن باش
+
+    .row
+      div
+        p.lead.text-center
+          |  پروژه مطمئن باش به صورت متن باز​ (Open Source) ​توسعه داده شده است و مخزن کد بخش‌های مختلف این پروژه از طریق لینک‌های زیر در دسترس است:
+
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fab.fa-android.text-gray.me-1
+              | نسخه اندروید
+            h5 لایسنس: Apache license 2.0
+            p.card-text
+              i.fab.fa-github.text-gray.me-1
+              | مخزن کد در گیت‌هاب: 
+              a(href='https://github.com/miladnouri/motmaenbash-android' target='_blank') https://github.com/miladnouri/motmaenbash-android
+              p.fs-6
+                | نسخه اندروید مطمئن باش تحت مجوز Apache 2.0 منتشر شده است.
+                br
+                | استفاده، تغییر یا توزیع کد منبع آزاد است، اما استفاده از نام یا لوگوی «مطمئن باش» (MotmaenBash / Motmaen Bash) به‌طور کامل ممنوع است.
+                br
+                | بیلد و انتشار عمومی پروژه تحت همین نام «مطمئن باش» فقط توسط تیم اصلی پروژه مجاز است.
+
+
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fab.fa-chrome.text-gray.me-1
+              | اکستنشن کروم
+            h5 لایسنس: MIT license
+            p.card-text
+              i.fab.fa-github.text-gray.me-1
+              | مخزن کد در گیت‌هاب: 
+              a(href='https://github.com/miladnouri/motmaenbash-chrome' target='_blank') https://github.com/miladnouri/motmaenbash-chrome
+
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fab.fa-firefox.text-gray.me-1
+              | اکستنشن فایرفاکس
+            h5 لایسنس: MIT license
+            p.card-text
+              i.fab.fa-github.text-gray.me-1
+              | مخزن کد در گیت‌هاب: 
+              a(href='https://github.com/miladnouri/motmaenbash-firefox' target='_blank') https://github.com/miladnouri/motmaenbash-firefox
+
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fas.fa-window-restore.text-gray.me-1
+              | وب‌سایت مطمئن باش
+            h5 لایسنس: MIT license
+            p.card-text
+              i.fab.fa-github.text-gray.me-1
+              | مخزن کد در گیت‌هاب: 
+              a(href='https://github.com/miladnouri/motmaenbash-website' target='_blank') https://github.com/miladnouri/motmaenbash-website
+
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fas.fa-database.text-gray.me-1
+              | پایگاه داده مطمئن باش
+            h5 لایسنس: CC-BY-4.0 license
+            p.card-text
+              i.fab.fa-github.text-gray.me-1
+              | مخزن کد در گیت‌هاب: 
+              a(href='https://github.com/miladnouri/motmaenbash-data' target='_blank') https://github.com/miladnouri/motmaenbash-data
+
+
+
+
+        .card.mt-4
+          .card-body
+            h2.card-title اهداف پروژه
+            ul.list-unstyled
+              li
+                i.fas.fa-check-double.text-success.me-1
+                |  افزایش آگاهی عمومی کاربران درباره کلاهبرداری‌های آنلاین، فیشینگ و روش‌های مقابله با آن‌ها
+              li
+                i.fas.fa-check-double.text-success.me-1
+                |  ارائه ابزارهای ساده و کاربردی برای عموم کاربران
+              li
+                i.fas.fa-check-double.text-success.me-1
+                |  کاهش ریسک کاربران در معرض حملات فیشینگ و کلاهبرداری‌های اینترنتی   
+              li
+                i.fas.fa-check-double.text-success.me-1
+                |  توسعه و به‌روزرسانی مستمر برای مقابله با کلاهبرداری‌های جدید اینترنتی                                            
+
+
+
+
+  include ../layout/inc_section_donate

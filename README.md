@@ -69,4 +69,5 @@ This website is built using [Pug](https://pugjs.org/) (formerly Jade) template e
     pug -w "pug/pages" -o ./ -P --basedir ./
 
 ## License
-This project is licensed under the MIT License.
+
+This project is licensed under the [MIT License](LICENSE).
