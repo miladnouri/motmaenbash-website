@@ -1,0 +1,77 @@
+extends ../layout/base.pug
+
+block variables
+  - var title = 'Privacy Policy | MotmaenBash'
+  - var description = 'Privacy policy of the MotmaenBash Android app, explaining data collection, usage, and user rights in a transparent manner.'
+  - var keywords = 'privacy policy, privacy, MotmaenBash, phishing protection, data security, Android app'
+  - var url = 'https://motmaenbash.ir/privacyـen.html'
+
+block content
+  section.container.my-2.text-end(dir="ltr")
+
+    .text-end.mb-4
+      a.btn.btn-outline-secondary.btn-sm(href="privacy.html" lang="fa") مشاهده نسخه فارسی
+
+    h1.text-center.mb-4 Privacy Policy
+
+    .row
+      div
+        p.lead.text-center
+          | This document explains how the MotmaenBash Android app handles your information.
+
+        .card.mt-4
+          .card-body
+            h2.card-title Data Collection and Security
+            ul.list-unstyled
+              li
+                | MotmaenBash does not require any user account, registration, or login, and it does not collect any personal data such as name, email, or phone number.
+              li
+                | SMS, link, and installed app analysis is performed locally and offline on the device. MotmaenBash does not use any server to store or process user data.
+              li
+                | The app never sends your data to any server or cloud service, because there is no backend infrastructure for that purpose.
+              li
+                | To detect new threats such as phishing SMS, scam websites, and suspicious apps, the app updates its database from a public GitHub repository.
+
+            hr
+
+            p.card-text
+              | All processing and alerts — including link, SMS, and app checks — are fully offline. MotmaenBash does not use any server for data collection or analysis.
+            p.card-text
+              | Any data submitted by users through the optional report form is used only to update the database and help identify new threats.
+            p.card-text
+              | Users can revoke the app's permissions at any time through the Android system settings.
+
+        .card.mt-4
+          .card-body
+            h2.card-title Analytics Tools
+            p.card-text
+              | The following tools are used solely to improve app stability and quality:
+              ul
+                li
+                  | Crashlytics by Firebase (owned by Google) is used for crash reporting.
+                li
+                  | Firebase Analytics (owned by Google) is used for general app usage statistics.
+              p.card-text
+                | Analytics data includes counts of events such as alert displays, but does not include any sensitive content, technical details, or personally identifiable information.
+              p.card-text
+                | Firebase libraries may automatically request advertising-related permissions. To protect user privacy, the following permissions have been manually removed from the app’s manifest:
+                .code-box.bg-light.border.rounded.p-3.mt-2
+                  pre.mb-0
+                    code.float-end.text-end(dir="ltr")
+                      | &lt;!-- Remove permissions automatically added by Firebase and Google Play Services --&gt;
+                      br
+                      | &lt;uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" /&gt;
+                      br
+                      | &lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove" /&gt;
+                      br
+                      | &lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove" /&gt;
+                      br
+                      | &lt;uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" tools:node="remove" /&gt;
+
+        .card.mt-4
+          .card-body
+            h2.card-title More Information
+            p.card-text
+              | For more information, please visit our 
+              a(href="https://motmaenbash.ir/faqs-en.html") FAQs 
+              | page.
