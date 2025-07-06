@@ -1,0 +1,113 @@
+extends ../layout/base.pug
+
+block variables
+  - var title = 'حمایت مالی | مطمئن باش'
+  - var description = 'با حمایت مالی (دونیت)، می‌توانید به توسعه و بهبود مستمر پروژه «مطمئن باش» کمک کنید.'
+  - var keywords = 'حمایت مالی, دونیت, مطمئن باش, MotmaenBash, اپلیکیشن ضد فیشینگ'
+  - var url = 'https://motmaenbash.ir/donate.html'
+
+block content
+  section.container.my-2
+    h1.text-center.mb-4 حمایت مالی از «مطمئن باش»
+
+    .row
+      div
+        p.lead.text-center
+          | حمایت مالی یا دونیشن یک راه برای حمایت از محصولات، محتوا و فعالیت‌های مورد علاقه ماست. با این کار، وقتی از محصول یا محتوایی استفاده می‌کنیم و برای آن ارزش قائلیم، می‌توانیم با حمایت، به ایجاد انگیزه و تداوم آن کمک کنیم.
+          br
+          | پروژه «مطمئن باش» به صورت رایگان و متن باز توسعه داده شده است. اگر این پروژه از نظر شما مفید بوده، با حمایت مالی (دونیت)، می‌توانید به توسعه و بهبود مستمر این پروژه کمک کنید.
+
+        .alert.alert-warning.mt-4.text-center
+          | حتی مبالغ کوچک هم برای ما ارزشمندند. <i class="fas fa-heart"></i>
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fas.fa-coins.text-gray.me-1
+              | حمایت ریالی
+            p.card-text.mt-3
+              i.fas.fa-link.text-gray.me-1
+              | پرداخت از طریق سایت کافیته:
+              br
+              a(href='https://coffeete.ir/miladnu' target='_blank') https://coffeete.ir/miladnu
+              p.fs-6
+                | پرداخت ریالی از طریق کارت‌های بانکی
+
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fas.fa-money-check-dollar.text-gray.me-1
+              | حمایت دلاری
+            p.card-text.mt-3
+              i.fas.fa-link.text-gray.me-1
+              | پرداخت از طریق سایت BuyMeACoffee:
+              br 
+              a(href='https://buymeacoffee.com/miladnu' target='_blank') https://buymeacoffee.com/miladnu
+
+            hr
+            p.card-text.mt-3
+              i.fas.fa-link.text-gray.me-1
+              | پرداخت از طریق پی‌پل (Paypal):
+              br
+              a(href='https://paypal.me/miladnu' target='_blank') https://paypal.me/miladnu
+                
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fas.fa-sack-dollar.text-gray.me-1
+              | حمایت از طریق رمزارز
+            h6.mb-3 می‌توانید از طریق رمزارزهای زیر از ما حمایت کنید:
+
+            .d-flex.align-items-center.mb-4.gap-3.flex-wrap
+              img(src='images/qr/usdt.jpg' alt='Tether QR' width='100')
+              div
+                i.fas.fa-wallet.text-gray.me-1
+                | تتر (TRC20):
+                br
+                code TCaBC8d9KhhEA9u5yKSqNSyf2DGFzKrBa2
+
+            .d-flex.align-items-center.mb-4.gap-3.flex-wrap
+              img(src='images/qr/ton.jpg' alt='TON QR' width='100')
+              div
+                i.fas.fa-wallet.text-gray.me-1
+                | تون (TON):
+                br
+                code UQDebT8tDixx34yeeNJ17aZQgmSpuyVJm6CUQ1gVQqcigHKN
+
+            .d-flex.align-items-center.mb-4.gap-3.flex-wrap
+              img(src='images/qr/doge.jpg' alt='Doge QR' width='100')
+              div
+                i.fas.fa-wallet.text-gray.me-1
+                | دوج‌کوین (DOGE):
+                br
+                code DEtm2jgDXJxztfbU2TcMgZbV2Wz3DhDzKr
+
+            .d-flex.align-items-center.mb-4.gap-3.flex-wrap
+              img(src='images/qr/btc.jpg' alt='Bitcoin QR' width='100')
+              div
+                i.fab.fa-bitcoin.text-gray.me-1
+                | بیت‌کوین (BTC):
+                br
+                code bc1qaduh2ydcezca5hl8tv82x8ygylmqsrxct7wxzs
+
+            .d-flex.align-items-center.mb-4.gap-3.flex-wrap
+              img(src='images/qr/eth.jpg' alt='Ethereum QR' width='100')
+              div
+                i.fab.fa-ethereum.text-gray.me-1
+                | اتریوم (ERC20):
+                br
+                code 0x04D283bcd8A1299f0f4bff35236090aaa1605Fd3
+
+
+        .card.mt-4
+          .card-body
+            h3.card-title
+              i.fab.fa-telegram.text-gray.me-1
+              | حمایت از طریق استارز تلگرام
+            h6 می‌توانید با ارسال استارز تلگرام روی پست‌های کانال تلگرام، از ما حمایت کنید.
+            p.card-text
+              i.fas.fa-link.text-gray.me-1
+              | کانال تلگرام: 
+              a(href='https://t.me/miladnourichannel' target='_blank') @MiladNouriChannel
+                                 
+        .alert.alert-warning.mt-4.text-center
+          | پیشاپیش از حمایت و همراهی شما سپاس‌گزارم! <i class="fas fa-heart"></i>

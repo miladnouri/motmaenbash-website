@@ -35,7 +35,7 @@ To use MotmaenBash, simply install the appropriate extension for your browser or
 
 If you find MotmaenBash useful, You can support it by donate:
 
-💝 [Make a donation](https://milad.nu/page/donate)
+💝 [Make a donation](https://motmaenbash.ir/donate.html)
 
 حمایت شما باعث تداوم این پروژه و بروزرسانی مداوم آن خواهد شد 💝
 
