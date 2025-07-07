@@ -1,0 +1,30 @@
+extends ../layout/base.pug
+
+block variables
+  - var title = 'صفحه تست | مطمئن باش'
+  - var description = 'این صفحه یک نمونه ساختگی برای تست عملکرد اپلیکیشن مطمئن باش است.'
+  - var url = 'https://motmaenbash.ir/app_test_sample_threat.html'
+
+block content
+  section.container.my-5
+    h1.text-center.mb-4 صفحه تست اپلیکیشن مطمئن باش
+
+    .alert.alert-info.text-center(role="alert")
+      strong توجه: این صفحه کاملا ساختگی و امن است.
+      br
+      |  هدف از ایجاد این صفحه، تست و بررسی عملکرد اپلیکیشن "مطمئن باش" در شناسایی لینک‌های تهدیدهای اینترنتی است.
+      br
+      |  این صفحه فقط برای دموی سپر وب‌گردی "مطمئن باش" ساخته شده است.
+
+    .card.mt-4
+      .card-body
+        p.card-text
+          |  با بازکردن لینک این صفحه در مرورگر موبایل خود، اپلیکیشن مطمئن باش به شما هشدار می دهد.
+        p.card-text
+          |  این هشدار صرفا برای تست و نمایش عملکرد سپر وب‌‌گردی اپلیکیشن است.
+        p.card-text           
+          | وگرنه این صفحه جزیی از سایت مطمئن باش و یک صفحه امن است.
+
+
+    .text-center.mt-5
+      a.btn.btn-outline-primary(href='index.html') بازگشت به صفحه اصلی
