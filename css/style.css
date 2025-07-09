@@ -276,10 +276,12 @@ section {
     padding: 40px 20px;
     background: #fff;
     border-bottom: 1px solid #ddd;
+    scroll-margin-top: 70px; /* Add scroll margin to prevent content from being hidden behind sticky header */
 }
 
 .title-bg {
     position: relative;
+    scroll-margin-top: 70px; /* Add scroll margin to prevent title from being hidden behind sticky header */
 }
 
 /* .title-bg::before {
@@ -355,7 +357,6 @@ section h2.title-bg::before {
 }
 
 .media-logos a {
-    display: inline-block;
     margin: 10px;
     transition: transform 0.3s ease;
 }
@@ -365,7 +366,7 @@ section h2.title-bg::before {
 }
 
 .media-logos img {
-    max-width: 96px;
+    max-width: 200px;
 }
 
 /* Footer */
@@ -446,9 +447,7 @@ footer ul li a:hover {
         padding: 20px 10px;
     }
 
-    section {
-        /* padding: 20px 20px; */
-    }
+    /* Removed empty ruleset */
 
     .navbar {
         background: white !important;
