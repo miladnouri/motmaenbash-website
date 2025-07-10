@@ -433,11 +433,16 @@ html(lang="fa" dir="rtl")
 
     section#media.container.my-2
       h2.title-bg.text-center.mb-3(title="مطمئن باش در رسانه‌ها") مطمئن باش در رسانه‌ها
-      .media-logos.text-center
+      .row.media-logos.justify-content-center.align-content-center.text-center.g-4
         //- این بخش برای نمایش لوگوی رسانه‌های منتشرکننده افزونه مطمئن باش استفاده می‌شود
-        a.mx-2(href="https://digiato.com/iran-technology-news/unveiling-android-app-motmaenbash" target="_blank")
+        .col-6.col-md-4
+          a(href="https://nooshdaroo.ir/security-tools/motmaen-bash/" target="_blank")
+            img.logo-width-120(src="images/press/nooshdaroo-logo.jpg" alt="Nooshdaroo Logo")
+        .col-6.col-md-4
+          a(href="https://digiato.com/iran-technology-news/unveiling-android-app-motmaenbash" target="_blank")
             img(src="images/press/digiato-logo.svg" alt="Digiato Logo")
-        a.mx-2(href="https://www.zoomit.ir/software-application/443587-motmaen-bash-milad-nouri-app-released-android/" target="_blank")
+        .col-6.col-md-4
+          a(href="https://www.zoomit.ir/software-application/443587-motmaen-bash-milad-nouri-app-released-android/" target="_blank")
             img(src="images/press/zoomit-logo.svg" alt="Zoomit Logo")
       br
       p.text-center.lh-lg

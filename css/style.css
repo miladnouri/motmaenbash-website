@@ -356,6 +356,11 @@ section h2.title-bg::before {
     border-radius: 10px;
 }
 
+.media-logos div {
+    align-content: center;
+    text-align: center;
+}
+    
 .media-logos a {
     margin: 10px;
     transition: transform 0.3s ease;
@@ -367,6 +372,19 @@ section h2.title-bg::before {
 
 .media-logos img {
     max-width: 200px;
+}
+
+/* Logo width classes */
+.logo-width-150 {
+    max-width: 150px !important;
+}
+
+.logo-width-120 {
+    max-width: 120px !important;
+}
+
+.logo-width-180 {
+    max-width: 180px !important;
 }
 
 /* Footer */
@@ -446,8 +464,6 @@ footer ul li a:hover {
     section .container {
         padding: 20px 10px;
     }
-
-    /* Removed empty ruleset */
 
     .navbar {
         background: white !important;
