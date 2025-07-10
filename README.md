@@ -68,6 +68,11 @@ This website is built using [Pug](https://pugjs.org/) (formerly Jade) template e
    ```bash
     pug -w "pug/pages" -o ./ -P --basedir ./
 
+3. Run prettier to format the HTML files:
+   ```bash
+    npx prettier --write index.html
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
