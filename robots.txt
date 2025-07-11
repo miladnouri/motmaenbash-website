@@ -1,1 +1,1 @@
-Disallow: /app_test_sample_threat.html
+Disallow: /app_test.html.html
