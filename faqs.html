@@ -82,13 +82,99 @@
       <h1 class="text-center mb-3">سوال‌های پرتکرار</h1>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="d-flex flex-wrap gap-2 mb-3"><a class="btn btn-blue" href="#general">سوال‌های عمومی فیشینگ</a><a class="btn btn-blue" href="#motmaen-bash">عملکرد مطمئن باش</a><a class="btn btn-blue" href="#trust">اعتماد به مطمئن باش؟</a><a class="btn btn-blue" href="#android-app">دسترسی‌های اندروید</a></div>
+          <div class="d-flex flex-wrap gap-2 mb-5"><a class="btn btn-blue" href="#trust">اعتماد به مطمئن باش؟</a><a class="btn btn-blue" href="#general">سوال‌های عمومی فیشینگ</a><a class="btn btn-blue" href="#motmaen-bash">عملکرد مطمئن باش</a><a class="btn btn-blue" href="#android-app">دسترسی‌های اندروید</a></div>
           <div class="accordion" id="faqAccordion">
-            <!-- Section 1: General Questions-->
-            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="general"><i class="fas fa-shield me-2"></i>سوال‌های عمومی فیشینگ</h3>
+            <!-- Section 1: Trust-->
+            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="trust"><i class="fas fa-lock me-2"></i>اعتماد به مطمئن باش؟<span class="badge bg-info fs-6 text-white ms-2">مهم</span>
+            </h3>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"><i class="fas fa-shield me-2"></i>فیشینگ چیست و چگونه انجام می‌شود؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false"><i class="fas fa-lock me-2"></i>آیا خود مطمئن باش امن است؟<span class="badge bg-success text-white ms-2">حتما بخوانید</span>
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="collapse9" data-bs-parent="#faqAccordion">
+                <div class="accordion-body fs-6">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p class="fw-bold">بله، مطمئن باش یک پروژه متن‌باز (Open Source) است و تمام کدهای آن در گیت‌هاب قابل مشاهده و بررسی است.</p>
+                      <p>چرا خود "مطمئن باش" قابل اعتماد است؟</p>
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-check-double text-success me-1"></i>اپلیکیشن مطمئن باش، متن باز (Open Source) می‌باشد و کدهای آن توسط برنامه‌نویس‌ها، کارشناس‌ها و عموم کاربران قابل بررسی است.</li>
+                        <li><i class="fas fa-check-double text-success me-1"></i>اپلیکیشن مطمئن باش فاقد سرور است و اطلاعات را به جایی ارسال / ذخیره نمی‌کند.</li>
+                        <li><i class="fas fa-check-double text-success me-1"></i>کلیه بررسی‌های مربوط به شناسایی برنامه، لینک و سایر موارد مشکوک به صورت آفلاین و با استفاده از دیتابیس (پایگاه داده) داخل خود برنامه ور روی گوشی صورت می‌گیرد.</li>
+                        <li><i class="fas fa-check-double text-success me-1"></i>دسترسی‌های حساس برنامه (دریافت پیامک و دسترسی‌پذیری) کاملا اختیاری است و کاربر می‌تواند با عدم اعطای این دسترسی‌ها، از سایر امکانات برنامه مثل بررسی و اسکن‌های دستی استفاده کند.</li>
+                        <li><i class="fas fa-check-double text-success me-1"></i>اپلیکیشن هیچ قسمتی برای عضویت و حساب کاربری ندارد و اطلاعاتی مثل شماره تماس، آدرس ایمیل و هیچ اطلاعات کاربری دیگری دریافت و ذخیره نمی‌کند.</li>
+                        <li><i class="fas fa-check-double text-success me-1"></i>مطمئن باش توسط مارکت‌های معتبر (با سخت‌گیری بالا) بررسی و منتشر شده است.</li>
+                        <li><i class="fas fa-check-double text-success me-1"></i>اپلیکیشن دیتابیس (پایگاه داده) آفلاین خود را به صورت دوره‌ای از یک مخزن (ریپازیتوری) گیت‌هاب بروزرسانی می‌کند.</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card bg-light">
+                        <div class="card-body text-center">
+                          <h5>متن‌باز و قابل بررسی توسط همه</h5><a class="btn btn-sm btn-outline-primary mt-2" href="git.html" target="_blank"><i class="fab fa-github me-1"></i>مشاهده کد در گیت‌هاب</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false"><i class="fas fa-user-shield me-2"></i>آیا مطمئن باش از اطلاعات شخصی من استفاده می‌کند؟<span class="badge bg-success text-white ms-2">حتما بخوانید</span>
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="collapse10" data-bs-parent="#faqAccordion">
+                <div class="accordion-body fs-6">خیر، مطمئن باش یک پروژه متن‌باز است و هیچ سرور مستقلی ندارد و هیچ اطلاعاتی از کاربران دریافت نمی‌کند و به جایی ارسال و ذخیره نمی‌کند.<br>این برنامه برای بررسی لینک‌ها، پیامک‌ها و اپلیکیشن‌های مشکوک، به هیچ عنوان اطلاعات شخصی، پیامک‌ها یا داده‌های مربوط به نصب برنامه‌ها را به سرور یا شخص ثالثی ارسال نمی‌کند، بلکه تمام بررسی‌ها و پردازش‌ها به‌صورت آفلاین و فقط روی دستگاه خود کاربر انجام می‌شود.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false"><i class="fas fa-chart-bar me-2"></i>آیا اپلیکیشن از ابزارهای آماری استفاده می‌کند؟
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="collapse21" data-bs-parent="#faqAccordion">
+                <div class="accordion-body fs-6">بله، برای بررسی پایداری برنامه و بهبود کیفیت آن، از ابزارهای زیر استفاده شده است:
+                  <ul>
+                    <li>برای گزارش خطاها و کرش‌های احتمالی از سرویس Crashlytics فایربیس (متعلق به گوگل) استفاده می‌شود.</li>
+                    <li>برای اطلاعات آماری کلی، از سرویس Analytics فایربیس (متعلق به گوگل) استفاده شده است.</li>
+                    <li>اطلاعات آماری شامل شمارش برخی رویدادها مانند تعداد نمایش هشدارها می‌شود، اما هیچ‌گونه داده‌ای شامل محتوای هشدارها، جزییات فنی یا اطلاعات شناسایی‌کننده از کاربران ذخیره یا ارسال نمی‌شود.</li>
+                    <li>کتابخانه‌های آماری فایربیس متعلق به گوگل، برای استفاده‌های آماری، به‌صورت خودکار برخی دسترسی‌های مربوط به تبلیغات را به برنامه اضافه کنمی‌کنندند. ما برای حفظ حریم خصوصی کاربران، این دسترسی‌ها را نیز به‌صورت دستی از طریق کدهای زیر از فایل مانیفست برنامه حذف کرده‌ایم:
+                      <div class="code-box bg-light border rounded p-3 mt-2">
+                        <pre class="mb-0"><code class="float-end text-end" dir="ltr">&lt;!-- Remove permissions automatically added by Firebase and Google Play Services --&gt;<br>&lt;uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" tools:node="remove" /&gt;</code></pre>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false"><i class="fas fa-download me-2"></i>نسخه امن مطمئن باش را از کجا دانلود کنم؟
+                </button>
+              </h3>
+              <div class="accordion-collapse collapse" id="collapse11" data-bs-parent="#faqAccordion">
+                <div class="accordion-body fs-6">
+                  <div class="row">
+                    <div class="col-md-8">برای حفظ امنیت و اطمینان از دریافت نسخه‌های معتبر، تنها از لینک‌های موجود در سایت مطمئن باش برای دانلود برنامه و افزونه‌های مربوطه استفاده کنید.<br>سایر نسخه‌های دانلود شده از منابع متفرقه ممکن است دستکاری شده و خطرات امنیتی به همراه داشته باشند. برای دانلود برنامه موبایل و افزونه مرورگر مطمئن باش از لینک‌های موجود در سایت مطمئن باش استفاده کنید:</div>
+                    <div class="col-md-4">
+                      <div class="card bg-light">
+                        <div class="card-body text-center"><a class="btn btn-sm btn-outline-primary mt-2" href="https://motmaenbash.ir/#android-app" target="_blank"><i class="ion-logo-android me-1"></i>دریافت برنامه موبایل </a><a class="btn btn-sm btn-outline-primary mt-2" href="https://motmaenbash.ir/#download" target="_blank"><i class="ion-ios-cloud-download me-1"></i>دریافت افزونه مرورگر</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="alert alert-danger mt-3"><i class="fas fa-triangle-exclamation me-1"></i>ما هیچ‌گونه مسئولیتی در قبال دانلود و نصب برنامه یا افزونه از منابع غیررسمی و عواقب آن نداریم.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2: General Questions-->
+            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="general"><i class="fas fa-shield me-2"></i>سوال‌های عمومی فیشینگ
+            </h3>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"><i class="fas fa-shield me-2"></i>فیشینگ چیست و چگونه انجام می‌شود؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse1" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">
@@ -151,7 +237,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"><i class="fas fa-comment me-2"></i>چگونه یک پیامک فیشینگ را تشخیص دهیم؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"><i class="fas fa-comment me-2"></i>چگونه یک پیامک فیشینگ را تشخیص دهیم؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse2" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">
@@ -171,7 +258,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"><i class="fas fa-envelope me-2"></i>چگونه یک ایمیل فیشینگ را تشخیص دهیم؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"><i class="fas fa-envelope me-2"></i>چگونه یک ایمیل فیشینگ را تشخیص دهیم؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse3" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">
@@ -189,7 +277,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"><i class="fas fa-shield-alt me-2"></i>راه‌های مقابله با فیشینگ چیست؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"><i class="fas fa-shield-alt me-2"></i>راه‌های مقابله با فیشینگ چیست؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse4" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">
@@ -208,11 +297,13 @@
                 </div>
               </div>
             </div>
-            <!-- Section 2: Motmaenbash-->
-            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="motmaen-bash"><i class="fas fa-mobile-alt me-2"></i>عملکرد مطمئن باش</h3>
+            <!-- Section 3: Motmaenbash-->
+            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="motmaen-bash"><i class="fas fa-mobile-alt me-2"></i>عملکرد مطمئن باش
+            </h3>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"><i class="fab fa-android me-2"></i>برنامه اندروید مطمئن باش چگونه کار می‌کند؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"><i class="fab fa-android me-2"></i>برنامه اندروید مطمئن باش چگونه کار می‌کند؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse5" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">
@@ -275,7 +366,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse31" aria-expanded="false"><i class="fas fa-mobile-alt me-2"></i>آیا برنامه موبایل مطمئن باش برای بررسی و شناسایی پیامک و لینک و برنامه مخرب اطلاعات را به سرور ارسال می‌کند؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse31" aria-expanded="false"><i class="fas fa-mobile-alt me-2"></i>آیا برنامه موبایل مطمئن باش برای بررسی و شناسایی پیامک و لینک و برنامه مخرب اطلاعات را به سرور ارسال می‌کند؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse31" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">
@@ -287,7 +379,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"><i class="fas fa-globe me-2"></i>افزونه مرورگر مطمئن باش چگونه کار می‌کند؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"><i class="fas fa-globe me-2"></i>افزونه مرورگر مطمئن باش چگونه کار می‌کند؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse6" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">افزونه مرورگر "مطمئن باش" از روش‌های زیر برای حفاظت بیشتر از شما در مقابل فیشینگ استفاده می‌کند:
@@ -300,7 +393,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false"><i class="fas fa-flag me-2"></i>چگونه می‌توانم فیشینگ و کلاهبرداری جدید را گزارش کنم؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false"><i class="fas fa-flag me-2"></i>چگونه می‌توانم فیشینگ و کلاهبرداری جدید را گزارش کنم؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse7" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">
@@ -322,7 +416,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false"><i class="fas fa-dollar-sign me-2"></i>آیا این برنامه رایگان است؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false"><i class="fas fa-dollar-sign me-2"></i>آیا این برنامه رایگان است؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse8" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">بله، این برنامه در حال حاضر رایگان است و شما می‌توانید بدون هیچ هزینه‌ای از آن استفاده کنید. ممکن است به صورت موقت یا دایم در محیط برنامه تبلیغات متنی یا تصویری نمایش داده شود.
@@ -331,7 +426,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false"><i class="fab fa-chrome me-2"></i>سپر وب‌گردی مطمئن باش روی اندروید از چه مرورگرهایی پشتیبانی می‌کند؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false"><i class="fab fa-chrome me-2"></i>سپر وب‌گردی مطمئن باش روی اندروید از چه مرورگرهایی پشتیبانی می‌کند؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse23" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">سپر وب‌گردی مطمئن باش در حال حاضر از مرورگرهای زیر پشتیبانی می‌کند:<br>کروم (Chrome)، فایرفاکس (Firefox)، مایکروسافت اج (Edge)، اپرا
@@ -340,89 +436,13 @@
                 </div>
               </div>
             </div>
-            <!-- Section 3: Trust-->
-            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="trust"><i class="fas fa-lock me-2"></i>اعتماد به مطمئن باش؟</h3>
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false"><i class="fas fa-lock me-2"></i>آیا مطمئن باش امن است؟</button>
-              </h3>
-              <div class="accordion-collapse collapse" id="collapse9" data-bs-parent="#faqAccordion">
-                <div class="accordion-body fs-6">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="fw-bold">بله، مطمئن باش یک پروژه متن‌باز (Open Source) است و تمام کدهای آن در گیت‌هاب قابل مشاهده و بررسی است.</p>
-                      <p>ویژگی‌های امنیتی کلیدی مطمئن باش:</p>
-                      <ul class="list-unstyled">
-                        <li><i class="fas fa-check-double text-success me-1"></i>کد کاملا متن‌باز و قابل بررسی توسط کارشناسان امنیت و عموم کاربرها</li>
-                        <li><i class="fas fa-check-double text-success me-1"></i>بدون سرور مرکزی - اطلاعات مورد نیاز برای به‌روزرسانی پایگاه داده برنامه از یک ریپازیتوری گیت‌هاب دریافت می‌شود</li>
-                        <li><i class="fas fa-check-double text-success me-1"></i>عدم ارسال داده‌های کاربر به سرور یا شخص ثالث</li>
-                        <li><i class="fas fa-check-double text-success me-1"></i>امکان کنترل دسترسی‌ها توسط کاربر</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card bg-light">
-                        <div class="card-body text-center">
-                          <h5>متن‌باز و قابل بررسی توسط همه</h5><a class="btn btn-sm btn-outline-primary mt-2" href="git.html" target="_blank"><i class="fab fa-github me-1"></i>مشاهده کد در گیت‌هاب</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false"><i class="fas fa-user-shield me-2"></i>آیا مطمئن باش از اطلاعات شخصی من استفاده می‌کند؟</button>
-              </h3>
-              <div class="accordion-collapse collapse" id="collapse10" data-bs-parent="#faqAccordion">
-                <div class="accordion-body fs-6">
-                  خیر، مطمئن باش یک پروژه متن‌باز است و هیچ سرور مستقلی ندارد و هیچ اطلاعاتی از کاربران را ارسال نمی‌کند.
-                  این برنامه به هیچ عنوان اطلاعات شخصی، پیامک‌ها یا داده‌های مربوط به نصب برنامه‌ها را به سرور یا شخص ثالثی ارسال نمی‌کند، بلکه تمام پردازش‌ها به‌صورت آفلاین و فقط روی دستگاه کاربر انجام می‌شود.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false"><i class="fas fa-chart-bar me-2"></i>آیا اپلیکیشن از ابزارهای آماری استفاده می‌کند؟</button>
-              </h3>
-              <div class="accordion-collapse collapse" id="collapse21" data-bs-parent="#faqAccordion">
-                <div class="accordion-body fs-6">بله، برای بررسی پایداری برنامه و بهبود کیفیت آن، از ابزارهای زیر استفاده شده است:
-                  <ul>
-                    <li>برای گزارش خطاها و کرش‌های احتمالی از سرویس Crashlytics فایربیس (متعلق به گوگل) استفاده می‌شود.</li>
-                    <li>برای اطلاعات آماری کلی، از سرویس Analytics فایربیس (متعلق به گوگل) استفاده شده است.</li>
-                    <li>اطلاعات آماری شامل شمارش برخی رویدادها مانند تعداد نمایش هشدارها می‌شود، اما هیچ‌گونه داده‌ای شامل محتوای هشدارها، جزییات فنی یا اطلاعات شناسایی‌کننده از کاربران ذخیره یا ارسال نمی‌شود.</li>
-                    <li>کتابخانه‌های آماری فایربیس متعلق به گوگل، برای استفاده‌های آماری، به‌صورت خودکار برخی دسترسی‌های مربوط به تبلیغات را به برنامه اضافه کنمی‌کنندند. ما برای حفظ حریم خصوصی کاربران، این دسترسی‌ها را نیز به‌صورت دستی از طریق کدهای زیر از فایل مانیفست برنامه حذف کرده‌ایم:
-                      <div class="code-box bg-light border rounded p-3 mt-2">
-                        <pre class="mb-0"><code class="float-end text-end" dir="ltr">&lt;!-- Remove permissions automatically added by Firebase and Google Play Services --&gt;<br>&lt;uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove" /&gt;<br>&lt;uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" tools:node="remove" /&gt;</code></pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false"><i class="fas fa-download me-2"></i>نسخه امن مطمئن باش را از کجا دانلود کنم؟</button>
-              </h3>
-              <div class="accordion-collapse collapse" id="collapse11" data-bs-parent="#faqAccordion">
-                <div class="accordion-body fs-6">
-                  <div class="row">
-                    <div class="col-md-8">برای حفظ امنیت و اطمینان از دریافت نسخه‌های معتبر، تنها از لینک‌های موجود در سایت مطمئن باش برای دانلود برنامه و افزونه‌های مربوطه استفاده کنید.<br>سایر نسخه‌های دانلود شده از منابع متفرقه ممکن است دستکاری شده و خطرات امنیتی به همراه داشته باشند. برای دانلود برنامه موبایل و افزونه مرورگر مطمئن باش از لینک‌های موجود در سایت مطمئن باش استفاده کنید:</div>
-                    <div class="col-md-4">
-                      <div class="card bg-light">
-                        <div class="card-body text-center"><a class="btn btn-sm btn-outline-primary mt-2" href="https://motmaenbash.ir/#android-app" target="_blank"><i class="ion-logo-android me-1"></i>دریافت برنامه موبایل </a><a class="btn btn-sm btn-outline-primary mt-2" href="https://motmaenbash.ir/#download" target="_blank"><i class="ion-ios-cloud-download me-1"></i>دریافت افزونه مرورگر</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="alert alert-danger mt-3"><i class="fas fa-triangle-exclamation me-1"></i>ما هیچ‌گونه مسئولیتی در قبال دانلود و نصب برنامه یا افزونه از منابع غیررسمی و عواقب آن نداریم.</div>
-                </div>
-              </div>
-            </div>
             <!-- Section 4: App Permissions-->
-            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="android-app"><i class="fas fa-layer-group me-2"></i>سطح دسترسی‌های برنامه اندروید مطمئن باش</h3>
+            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="android-app"><i class="fas fa-layer-group me-2"></i>سطح دسترسی‌های برنامه اندروید مطمئن باش
+            </h3>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false"><i class="fas fa-wifi me-2"></i>چرا اپلیکیشن به دسترسی‌های اینترنت و وضعیت شبکه (INTERNET و ACCESS_NETWORK_STATE) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false"><i class="fas fa-wifi me-2"></i>چرا اپلیکیشن به دسترسی‌های اینترنت و وضعیت شبکه (INTERNET و ACCESS_NETWORK_STATE) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse13" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">این برنامه برای به‌روزرسانی پایگاه داده و دریافت اطلاعات جدید، به دسترسی اینترنت نیاز دارد. همچنین به‌منظور جلوگیری از بروز خطاهای ناشی از عدم دسترسی به اینترنت، دسترسی به وضعیت شبکه نیز مورد نیاز است.
@@ -431,26 +451,30 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false"><i class="fas fa-comment me-2"></i>چرا اپلیکیشن به دسترسی دریافت پیامک جدید (RECEIVE_SMS) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false"><i class="fas fa-comment me-2"></i>چرا اپلیکیشن به دسترسی دریافت پیامک جدید (RECEIVE_SMS) نیاز دارد؟<span class="badge bg-info text-white ms-2">دسترسی اختیاری</span>
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse12" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">این برنامه برای شناسایی پیامک‌های مشکوک و فیشینگ، به دسترسی دریافت پیامک جدید نیاز دارد. توجه داشته باشید این دسترسی تنها شامل پیامک تازه دریافت‌شده است و برنامه به هیچ وجه دسترسی به ارسال پیامک یا مشاهده پیامک‌های ذخیره‌شده کاربر را ندارد.
-                  <div class="alert alert-success mt-2"> این دسترسی فقط برای خواندن پیامک‌هاست و شامل ارسال پیامک نمی‌شود</div>
+                  <div class="alert alert-info mt-2"> این دسترسی اختیاری است و کاربر می‌تواند بدون اعطای این دسترسی از سایر امکانات برنامه (مثل اسکن برنامه‌ها، بررسی دستی لینک ها، نکات آموزشی و...) استفاده کند.<br> این دسترسی فقط برای خواندن پیامک دریافتی جدید است و شامل ارسال پیامک یا خواندن پیامک‌های قبلی نمی‌شود.</div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX1" aria-expanded="false"><i class="fas fa-universal-access me-2"></i>چرا اپلیکیشن به سرویس دسترسی‌پذیری (BIND_ACCESSIBILITY_SERVICE) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX1" aria-expanded="false"><i class="fas fa-universal-access me-2"></i>چرا اپلیکیشن به سرویس دسترسی‌پذیری (BIND_ACCESSIBILITY_SERVICE) نیاز دارد؟<span class="badge bg-info text-white ms-2">دسترسی اختیاری</span>
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapseX1" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">این برنامه برای شناسایی سایت‌های فیشینگ و هشدار به کاربر هنگام وب‌گردی، نیاز به دسترسی به سرویس دسترسی‌پذیری دارد. با استفاده از این دسترسی، لینک‌ها و صفحات مشکوک بررسی می‌شوند و در صورت مشاهده موارد خطرناک، هشدار لازم نمایش داده می‌شود. همچنین در هنگام استفاده از درگاه‌های پرداخت، اصالت درگاه‌های معتبر شاپرک به کاربر اطلاع داده می‌شود.
+                  <div class="alert alert-info mt-2"> این دسترسی اختیاری است و کاربر می‌تواند بدون اعطای این دسترسی از سایر امکانات برنامه (مثل اسکن برنامه‌ها، بررسی دستی لینک ها، نکات آموزشی و...) استفاده کند.</div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false"><i class="fas fa-layer-group me-2"></i>چرا اپلیکیشن به دسترسی نمایش روی سایر برنامه‌ها (SYSTEM_ALERT_WINDOW) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false"><i class="fas fa-layer-group me-2"></i>چرا اپلیکیشن به دسترسی نمایش روی سایر برنامه‌ها (SYSTEM_ALERT_WINDOW) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse19" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">این برنامه برای نمایش هشدارها، به این دسترسی نیاز دارد. به‌وسیله این دسترسی، برنامه می‌تواند هشدارها را حتی زمانی که در حال استفاده از برنامه‌های دیگر هستید، به شما نمایش دهد.
@@ -459,7 +483,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false"><i class="fas fa-box-open me-2"></i>چرا اپلیکیشن به دسترسی لیست برنامه‌های نصب شده (QUERY_ALL_PACKAGES) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false"><i class="fas fa-box-open me-2"></i>چرا اپلیکیشن به دسترسی لیست برنامه‌های نصب شده (QUERY_ALL_PACKAGES) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse15" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">این برنامه برای اسکن برنامه‌های نصب شده به منظور شناسایی برنامه‌های مشکوک و فیشینگ، به لیست برنامه‌های نصب‌شده نیاز دارد.
@@ -468,7 +493,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false"><i class="fas fa-trash me-2"></i>چرا اپلیکیشن به دسترسی درخواست حذف برنامه (REQUEST_DELETE_PACKAGES) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false"><i class="fas fa-trash me-2"></i>چرا اپلیکیشن به دسترسی درخواست حذف برنامه (REQUEST_DELETE_PACKAGES) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse18" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">این برنامه هنگام شناسایی برنامه مشکوک، به کاربر هشدار داده و پیشنهاد حذف برنامه را می‌دهد. برای این منظور، به این دسترسی نیاز دارد. توجه داشته باشید که این دسترسی تنها درخواست حذف را به سیستم ارسال می‌کند و کاربر باید تایید کند که برنامه را حذف کند. هیچ‌گونه اقدام خودکاری برای حذف برنامه انجام نمی‌شود و حذف تنها با تایید کاربر امکان‌پذیر است.
@@ -477,7 +503,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false"><i class="fas fa-tasks me-2"></i>چرا اپلیکیشن به دسترسی اجرای سرویس پیش‌زمینه (FOREGROUND_SERVICE) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false"><i class="fas fa-tasks me-2"></i>چرا اپلیکیشن به دسترسی اجرای سرویس پیش‌زمینه (FOREGROUND_SERVICE) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse17" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">برای اطمینان از اینکه سپرهای امنیتی پیامک، وب‌گردی، نصب برنامه و… همیشه فعال باقی می‌مانند، این برنامه از اندروید نسخه ۸ (Android 8) به بالا به این دسترسی نیاز دارد. بدیهی‌ست روی نسخه‌های قدیمی‌تر اندروید این دسترسی دریافت نمی‌شود.
@@ -486,7 +513,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX2" aria-expanded="false"><i class="fas fa-sync me-2"></i>چرا اپلیکیشن به دسترسی سرویس پیش‌زمینه برای همگام‌سازی داده (FOREGROUND_SERVICE_DATA_SYNC) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX2" aria-expanded="false"><i class="fas fa-sync me-2"></i>چرا اپلیکیشن به دسترسی سرویس پیش‌زمینه برای همگام‌سازی داده (FOREGROUND_SERVICE_DATA_SYNC) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapseX2" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">برای اجرای سرویس‌های پیش‌زمینه که مسئول همگام‌سازی داده‌ها هستند، این برنامه به این دسترسی نیاز دارد. توجه داشته باشید که این دسترسی از اندروید نسخه ۱۰ (Android 10) به بالا دریافت می‌شود.
@@ -495,7 +523,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false"><i class="fas fa-bell me-2"></i>چرا اپلیکیشن به دسترسی نمایش اعلان (POST_NOTIFICATIONS) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false"><i class="fas fa-bell me-2"></i>چرا اپلیکیشن به دسترسی نمایش اعلان (POST_NOTIFICATIONS) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse16" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">از اندروید نسخه ۸ (Android 8) به بالا، برای راه‌اندازی سرویس‌های پیش‌زمینه، نمایش اعلان ضروری است تا کاربر از در حال اجرا بودن سرویس برنامه آگاه شود. برای این منظور، برنامه به این دسترسی نیاز دارد. همچنین، ممکن است در برخی موارد اطلاع‌رسانی‌هایی نظیر نسخه جدید نرم‌افزار و… از طریق اعلان‌ها به کاربر صورت گیرد.
@@ -504,7 +533,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false"><i class="fas fa-power-off me-2"></i>چرا اپلیکیشن به دسترسی اجرای پس از راه‌اندازی (بوت) مجدد دستگاه (RECEIVE_BOOT_COMPLETED) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false"><i class="fas fa-power-off me-2"></i>چرا اپلیکیشن به دسترسی اجرای پس از راه‌اندازی (بوت) مجدد دستگاه (RECEIVE_BOOT_COMPLETED) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse14" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">برای اطمینان از اینکه برنامه پس از راه‌اندازی مجدد دستگاه همچنان فعال باقی می‌ماند، این برنامه به این دسترسی نیاز دارد.
@@ -513,7 +543,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX" aria-expanded="false"><i class="fas fa-tower-broadcast me-2"></i>چرا اپلیکیشن به دسترسی ویبره (VIBRATE) نیاز دارد؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseX" aria-expanded="false"><i class="fas fa-tower-broadcast me-2"></i>چرا اپلیکیشن به دسترسی ویبره (VIBRATE) نیاز دارد؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapseX" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">برای ایجاد لرزش هنگام نمایش هشدار شناسایی پیامک‌ها، لینک‌ها و برنامه‌های مشکوک، این برنامه به دسترسی ویبره نیاز دارد.
@@ -522,7 +553,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false"><i class="fas fa-toggle-off me-2"></i>آیا غیرفعال کردن برخی دسترسی‌های اپلیکیشن امکان‌پذیر است؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false"><i class="fas fa-toggle-off me-2"></i>آیا غیرفعال کردن برخی دسترسی‌های اپلیکیشن امکان‌پذیر است؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse20" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">بله، می‌توانید برخی از دسترسی‌های اپلیکیشن را غیرفعال کنید، اما این کار ممکن است برخی از قابلیت‌های اپلیکیشن را محدود کند. برای مثال، اگر دسترسی به پیامک‌ها را غیرفعال کنید، اپلیکیشن نمی‌تواند پیامک‌های فیشینگ را شناسایی کند. توصیه می‌کنیم برای بهره‌مندی از تمام قابلیت‌های امنیتی، دسترسی‌های مورد نیاز را فعال نگه دارید.
@@ -530,10 +562,12 @@
               </div>
             </div>
             <!-- Section 5: Otherr-->
-            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="trust"><i class="fas fa-folder me-2"></i>سایر موارد</h3>
+            <h3 class="mt-3 mb-3 pb-2 border-bottom" id="trust"><i class="fas fa-folder me-2"></i>سایر موارد
+            </h3>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false"><i class="fab fa-apple me-2"></i>آیا برنامه مطمئن باش برای iOS هم در دسترس است؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false"><i class="fab fa-apple me-2"></i>آیا برنامه مطمئن باش برای iOS هم در دسترس است؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse22" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6"> در حال حاضر، برنامه مطمئن باش فقط برای سیستم عامل اندروید در دسترس است. به دلیل محدودیت‌های سیستم عامل iOS در دسترسی به بخش‌های مختلف دستگاه، ارائه نسخه iOS با همان قابلیت‌ها دشوار است.
@@ -542,7 +576,8 @@
             </div>
             <div class="accordion-item">
               <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false"><i class="fas fa-shield-virus me-2"></i>آیا استفاده از مطمئن باش به جای آنتی‌ویروس کافی است؟</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false"><i class="fas fa-shield-virus me-2"></i>آیا استفاده از مطمئن باش به جای آنتی‌ویروس کافی است؟
+                </button>
               </h3>
               <div class="accordion-collapse collapse" id="collapse23" data-bs-parent="#faqAccordion">
                 <div class="accordion-body fs-6">  مطمئن باش با هدف مقابله با فیشینگ طراحی شده و تمرکز خود را بر شناسایی پیامک‌های مشکوک، سایت‌های فیشینگ و برنامه‌های مخرب گذاشته است و جایگزین آنتی‌ویروس نیست.

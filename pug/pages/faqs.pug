@@ -12,15 +12,114 @@ block content
     h1.text-center.mb-3 سوال‌های پرتکرار
     .row.justify-content-center
       .col-12
-        .d-flex.flex-wrap.gap-2.mb-3
+        .d-flex.flex-wrap.gap-2.mb-5
+          a.btn.btn-blue(href="#trust") اعتماد به مطمئن باش؟
           a.btn.btn-blue(href="#general") سوال‌های عمومی فیشینگ
           a.btn.btn-blue(href="#motmaen-bash") عملکرد مطمئن باش
-          a.btn.btn-blue(href="#trust") اعتماد به مطمئن باش؟
           a.btn.btn-blue(href="#android-app") دسترسی‌های اندروید
 
         #faqAccordion.accordion
 
-          // Section 1: General Questions
+
+          // Section 1: Trust
+          +accordion-header("trust", "fas fa-lock", "اعتماد به مطمئن باش؟")
+            span.badge.bg-info.fs-6.text-white.ms-2 مهم
+
+
+          +accordion-item("collapse9", "fas fa-lock", "آیا خود مطمئن باش امن است؟", {text: 'حتما بخوانید', color: 'bg-success'})
+            .row
+              .col-md-9
+                p.fw-bold بله، مطمئن باش یک پروژه متن‌باز (Open Source) است و تمام کدهای آن در گیت‌هاب قابل مشاهده و بررسی است.
+                p
+                  | چرا خود "مطمئن باش" قابل اعتماد است؟
+                ul.list-unstyled
+                  li
+                    i.fas.fa-check-double.text-success.me-1
+                    | اپلیکیشن مطمئن باش، متن باز (Open Source) می‌باشد و کدهای آن توسط برنامه‌نویس‌ها، کارشناس‌ها و عموم کاربران قابل بررسی است.
+                  li
+                    i.fas.fa-check-double.text-success.me-1
+                    | اپلیکیشن مطمئن باش فاقد سرور است و اطلاعات را به جایی ارسال / ذخیره نمی‌کند.
+                  li
+                    i.fas.fa-check-double.text-success.me-1
+                    | کلیه بررسی‌های مربوط به شناسایی برنامه، لینک و سایر موارد مشکوک به صورت آفلاین و با استفاده از دیتابیس (پایگاه داده) داخل خود برنامه ور روی گوشی صورت می‌گیرد.
+
+                  li
+                    i.fas.fa-check-double.text-success.me-1
+                    | دسترسی‌های حساس برنامه (دریافت پیامک و دسترسی‌پذیری) کاملا اختیاری است و کاربر می‌تواند با عدم اعطای این دسترسی‌ها، از سایر امکانات برنامه مثل بررسی و اسکن‌های دستی استفاده کند.
+                  li
+                    i.fas.fa-check-double.text-success.me-1
+                    | اپلیکیشن هیچ قسمتی برای عضویت و حساب کاربری ندارد و اطلاعاتی مثل شماره تماس، آدرس ایمیل و هیچ اطلاعات کاربری دیگری دریافت و ذخیره نمی‌کند.
+                  li
+                    i.fas.fa-check-double.text-success.me-1
+                    | مطمئن باش توسط مارکت‌های معتبر (با سخت‌گیری بالا) بررسی و منتشر شده است.
+
+                  li
+                    i.fas.fa-check-double.text-success.me-1
+                    | اپلیکیشن دیتابیس (پایگاه داده) آفلاین خود را به صورت دوره‌ای از یک مخزن (ریپازیتوری) گیت‌هاب بروزرسانی می‌کند.
+               
+
+              .col-md-3
+                .card.bg-light
+                  .card-body.text-center
+                    h5 متن‌باز و قابل بررسی توسط همه
+                    a.btn.btn-sm.btn-outline-primary.mt-2(href="git.html" target="_blank")
+                      i.fab.fa-github.me-1
+                      | مشاهده کد در گیت‌هاب
+
+
+          +accordion-item("collapse10", "fas fa-user-shield", "آیا مطمئن باش از اطلاعات شخصی من استفاده می‌کند؟", {text: 'حتما بخوانید', color: 'bg-success'})
+            | خیر، مطمئن باش یک پروژه متن‌باز است و هیچ سرور مستقلی ندارد و هیچ اطلاعاتی از کاربران دریافت نمی‌کند و به جایی ارسال و ذخیره نمی‌کند.
+            br
+            | این برنامه برای بررسی لینک‌ها، پیامک‌ها و اپلیکیشن‌های مشکوک، به هیچ عنوان اطلاعات شخصی، پیامک‌ها یا داده‌های مربوط به نصب برنامه‌ها را به سرور یا شخص ثالثی ارسال نمی‌کند، بلکه تمام بررسی‌ها و پردازش‌ها به‌صورت آفلاین و فقط روی دستگاه خود کاربر انجام می‌شود.
+
+          +accordion-item("collapse21", "fas fa-chart-bar", "آیا اپلیکیشن از ابزارهای آماری استفاده می‌کند؟")
+            | بله، برای بررسی پایداری برنامه و بهبود کیفیت آن، از ابزارهای زیر استفاده شده است:
+            ul
+              li
+                | برای گزارش خطاها و کرش‌های احتمالی از سرویس Crashlytics فایربیس (متعلق به گوگل) استفاده می‌شود.
+              li
+                | برای اطلاعات آماری کلی، از سرویس Analytics فایربیس (متعلق به گوگل) استفاده شده است.
+              li
+                | اطلاعات آماری شامل شمارش برخی رویدادها مانند تعداد نمایش هشدارها می‌شود، اما هیچ‌گونه داده‌ای شامل محتوای هشدارها، جزییات فنی یا اطلاعات شناسایی‌کننده از کاربران ذخیره یا ارسال نمی‌شود.
+              li
+                | کتابخانه‌های آماری فایربیس متعلق به گوگل، برای استفاده‌های آماری، به‌صورت خودکار برخی دسترسی‌های مربوط به تبلیغات را به برنامه اضافه کنمی‌کنندند. ما برای حفظ حریم خصوصی کاربران، این دسترسی‌ها را نیز به‌صورت دستی از طریق کدهای زیر از فایل مانیفست برنامه حذف کرده‌ایم:
+                .code-box.bg-light.border.rounded.p-3.mt-2
+                  pre.mb-0
+                    code.float-end.text-end(dir="ltr")
+                      | &lt;!-- Remove permissions automatically added by Firebase and Google Play Services --&gt;
+                      br
+                      | &lt;uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" /&gt;
+                      br
+                      | &lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove" /&gt;
+                      br
+                      | &lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove" /&gt;
+                      br
+                      | &lt;uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" tools:node="remove" /&gt;
+
+
+          +accordion-item("collapse11", "fas fa-download", "نسخه امن مطمئن باش را از کجا دانلود کنم؟")
+            .row
+              .col-md-8
+                | برای حفظ امنیت و اطمینان از دریافت نسخه‌های معتبر، تنها از لینک‌های موجود در سایت مطمئن باش برای دانلود برنامه و افزونه‌های مربوطه استفاده کنید.
+                br
+                | سایر نسخه‌های دانلود شده از منابع متفرقه ممکن است دستکاری شده و خطرات امنیتی به همراه داشته باشند. برای دانلود برنامه موبایل و افزونه مرورگر مطمئن باش از لینک‌های موجود در سایت مطمئن باش استفاده کنید:
+
+              .col-md-4
+                .card.bg-light
+                  .card-body.text-center
+                    a.btn.btn-sm.btn-outline-primary.mt-2(href="https://motmaenbash.ir/#android-app" target="_blank")
+                      i.ion-logo-android.me-1
+                      | دریافت برنامه موبایل 
+
+                    a.btn.btn-sm.btn-outline-primary.mt-2(href="https://motmaenbash.ir/#download" target="_blank")
+                      i.ion-ios-cloud-download.me-1
+                      | دریافت افزونه مرورگر
+
+            .alert.alert-danger.mt-3
+              i.fas.fa-triangle-exclamation.me-1
+              | ما هیچ‌گونه مسئولیتی در قبال دانلود و نصب برنامه یا افزونه از منابع غیررسمی و عواقب آن نداریم.
+
+          // Section 2: General Questions
           +accordion-header("general", "fas fa-shield", "سوال‌های عمومی فیشینگ")
 
           +accordion-item("collapse1", "fas fa-shield", "فیشینگ چیست و چگونه انجام می‌شود؟")
@@ -174,7 +273,7 @@ block content
               | دریافت افزونه مرورگر مطمئن باش
 
 
-          // Section 2: Motmaenbash
+          // Section 3: Motmaenbash
           +accordion-header("motmaen-bash", "fas fa-mobile-alt", "عملکرد مطمئن باش")
 
 
@@ -287,88 +386,6 @@ block content
             br
             | ممکن است مرورگرهای مختلف در نسخه‌های گدشته خود عملکرد متفاوتی داشته باشند، سپر وب‌گردی مطمئن باش همواره روی نسخه‌های آخر مرورگرها بررسی و همگام‌سازی می‌شود. برای عملکرد درست این سپر امنیتی، مرورگر وب خود را به‌روزر نگه دارید.
 
-          // Section 3: Trust
-          +accordion-header("trust", "fas fa-lock", "اعتماد به مطمئن باش؟")
-
-
-          +accordion-item("collapse9", "fas fa-lock", "آیا مطمئن باش امن است؟")
-            .row
-              .col-md-8
-                p.fw-bold بله، مطمئن باش یک پروژه متن‌باز (Open Source) است و تمام کدهای آن در گیت‌هاب قابل مشاهده و بررسی است.
-                p
-                  | ویژگی‌های امنیتی کلیدی مطمئن باش:
-                ul.list-unstyled
-                  li
-                    i.fas.fa-check-double.text-success.me-1
-                    | کد کاملا متن‌باز و قابل بررسی توسط کارشناسان امنیت و عموم کاربرها
-                  li
-                    i.fas.fa-check-double.text-success.me-1
-                    | بدون سرور مرکزی - اطلاعات مورد نیاز برای به‌روزرسانی پایگاه داده برنامه از یک ریپازیتوری گیت‌هاب دریافت می‌شود
-                  li
-                    i.fas.fa-check-double.text-success.me-1
-                    | عدم ارسال داده‌های کاربر به سرور یا شخص ثالث
-                  li
-                    i.fas.fa-check-double.text-success.me-1
-                    | امکان کنترل دسترسی‌ها توسط کاربر
-              .col-md-4
-                .card.bg-light
-                  .card-body.text-center
-                    h5 متن‌باز و قابل بررسی توسط همه
-                    a.btn.btn-sm.btn-outline-primary.mt-2(href="git.html" target="_blank")
-                      i.fab.fa-github.me-1
-                      | مشاهده کد در گیت‌هاب
-
-
-          +accordion-item("collapse10", "fas fa-user-shield", "آیا مطمئن باش از اطلاعات شخصی من استفاده می‌کند؟")
-            | خیر، مطمئن باش یک پروژه متن‌باز است و هیچ سرور مستقلی ندارد و هیچ اطلاعاتی از کاربران را ارسال نمی‌کند.
-            | این برنامه به هیچ عنوان اطلاعات شخصی، پیامک‌ها یا داده‌های مربوط به نصب برنامه‌ها را به سرور یا شخص ثالثی ارسال نمی‌کند، بلکه تمام پردازش‌ها به‌صورت آفلاین و فقط روی دستگاه کاربر انجام می‌شود.
-
-          +accordion-item("collapse21", "fas fa-chart-bar", "آیا اپلیکیشن از ابزارهای آماری استفاده می‌کند؟")
-            | بله، برای بررسی پایداری برنامه و بهبود کیفیت آن، از ابزارهای زیر استفاده شده است:
-            ul
-              li
-                | برای گزارش خطاها و کرش‌های احتمالی از سرویس Crashlytics فایربیس (متعلق به گوگل) استفاده می‌شود.
-              li
-                | برای اطلاعات آماری کلی، از سرویس Analytics فایربیس (متعلق به گوگل) استفاده شده است.
-              li
-                | اطلاعات آماری شامل شمارش برخی رویدادها مانند تعداد نمایش هشدارها می‌شود، اما هیچ‌گونه داده‌ای شامل محتوای هشدارها، جزییات فنی یا اطلاعات شناسایی‌کننده از کاربران ذخیره یا ارسال نمی‌شود.
-              li
-                | کتابخانه‌های آماری فایربیس متعلق به گوگل، برای استفاده‌های آماری، به‌صورت خودکار برخی دسترسی‌های مربوط به تبلیغات را به برنامه اضافه کنمی‌کنندند. ما برای حفظ حریم خصوصی کاربران، این دسترسی‌ها را نیز به‌صورت دستی از طریق کدهای زیر از فایل مانیفست برنامه حذف کرده‌ایم:
-                .code-box.bg-light.border.rounded.p-3.mt-2
-                  pre.mb-0
-                    code.float-end.text-end(dir="ltr")
-                      | &lt;!-- Remove permissions automatically added by Firebase and Google Play Services --&gt;
-                      br
-                      | &lt;uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" /&gt;
-                      br
-                      | &lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove" /&gt;
-                      br
-                      | &lt;uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove" /&gt;
-                      br
-                      | &lt;uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" tools:node="remove" /&gt;
-
-
-          +accordion-item("collapse11", "fas fa-download", "نسخه امن مطمئن باش را از کجا دانلود کنم؟")
-            .row
-              .col-md-8
-                | برای حفظ امنیت و اطمینان از دریافت نسخه‌های معتبر، تنها از لینک‌های موجود در سایت مطمئن باش برای دانلود برنامه و افزونه‌های مربوطه استفاده کنید.
-                br
-                | سایر نسخه‌های دانلود شده از منابع متفرقه ممکن است دستکاری شده و خطرات امنیتی به همراه داشته باشند. برای دانلود برنامه موبایل و افزونه مرورگر مطمئن باش از لینک‌های موجود در سایت مطمئن باش استفاده کنید:
-
-              .col-md-4
-                .card.bg-light
-                  .card-body.text-center
-                    a.btn.btn-sm.btn-outline-primary.mt-2(href="https://motmaenbash.ir/#android-app" target="_blank")
-                      i.ion-logo-android.me-1
-                      | دریافت برنامه موبایل 
-
-                    a.btn.btn-sm.btn-outline-primary.mt-2(href="https://motmaenbash.ir/#download" target="_blank")
-                      i.ion-ios-cloud-download.me-1
-                      | دریافت افزونه مرورگر
-
-            .alert.alert-danger.mt-3
-              i.fas.fa-triangle-exclamation.me-1
-              | ما هیچ‌گونه مسئولیتی در قبال دانلود و نصب برنامه یا افزونه از منابع غیررسمی و عواقب آن نداریم.
 
           // Section 4: App Permissions
           +accordion-header("android-app", "fas fa-layer-group", "سطح دسترسی‌های برنامه اندروید مطمئن باش")
@@ -377,14 +394,19 @@ block content
           +accordion-item("collapse13", "fas fa-wifi", "چرا اپلیکیشن به دسترسی‌های اینترنت و وضعیت شبکه (INTERNET و ACCESS_NETWORK_STATE) نیاز دارد؟")
             | این برنامه برای به‌روزرسانی پایگاه داده و دریافت اطلاعات جدید، به دسترسی اینترنت نیاز دارد. همچنین به‌منظور جلوگیری از بروز خطاهای ناشی از عدم دسترسی به اینترنت، دسترسی به وضعیت شبکه نیز مورد نیاز است.
 
-          +accordion-item("collapse12", "fas fa-comment", "چرا اپلیکیشن به دسترسی دریافت پیامک جدید (RECEIVE_SMS) نیاز دارد؟")
+          +accordion-item("collapse12", "fas fa-comment", "چرا اپلیکیشن به دسترسی دریافت پیامک جدید (RECEIVE_SMS) نیاز دارد؟", {text: 'دسترسی اختیاری', color: 'bg-info'})
+          
             | این برنامه برای شناسایی پیامک‌های مشکوک و فیشینگ، به دسترسی دریافت پیامک جدید نیاز دارد. توجه داشته باشید این دسترسی تنها شامل پیامک تازه دریافت‌شده است و برنامه به هیچ وجه دسترسی به ارسال پیامک یا مشاهده پیامک‌های ذخیره‌شده کاربر را ندارد.
-            .alert.alert-success.mt-2
-              |  این دسترسی فقط برای خواندن پیامک‌هاست و شامل ارسال پیامک نمی‌شود
+            .alert.alert-info.mt-2
+              |  این دسترسی اختیاری است و کاربر می‌تواند بدون اعطای این دسترسی از سایر امکانات برنامه (مثل اسکن برنامه‌ها، بررسی دستی لینک ها، نکات آموزشی و...) استفاده کند.
+              br
+              |  این دسترسی فقط برای خواندن پیامک دریافتی جدید است و شامل ارسال پیامک یا خواندن پیامک‌های قبلی نمی‌شود.
 
-          +accordion-item("collapseX1", "fas fa-universal-access", "چرا اپلیکیشن به سرویس دسترسی‌پذیری (BIND_ACCESSIBILITY_SERVICE) نیاز دارد؟")
+          +accordion-item("collapseX1", "fas fa-universal-access", "چرا اپلیکیشن به سرویس دسترسی‌پذیری (BIND_ACCESSIBILITY_SERVICE) نیاز دارد؟", {text: 'دسترسی اختیاری', color: 'bg-info'})
             | این برنامه برای شناسایی سایت‌های فیشینگ و هشدار به کاربر هنگام وب‌گردی، نیاز به دسترسی به سرویس دسترسی‌پذیری دارد. با استفاده از این دسترسی، لینک‌ها و صفحات مشکوک بررسی می‌شوند و در صورت مشاهده موارد خطرناک، هشدار لازم نمایش داده می‌شود. همچنین در هنگام استفاده از درگاه‌های پرداخت، اصالت درگاه‌های معتبر شاپرک به کاربر اطلاع داده می‌شود.
-
+            .alert.alert-info.mt-2
+              |  این دسترسی اختیاری است و کاربر می‌تواند بدون اعطای این دسترسی از سایر امکانات برنامه (مثل اسکن برنامه‌ها، بررسی دستی لینک ها، نکات آموزشی و...) استفاده کند.
+            
           +accordion-item("collapse19", "fas fa-layer-group", "چرا اپلیکیشن به دسترسی نمایش روی سایر برنامه‌ها (SYSTEM_ALERT_WINDOW) نیاز دارد؟")
             | این برنامه برای نمایش هشدارها، به این دسترسی نیاز دارد. به‌وسیله این دسترسی، برنامه می‌تواند هشدارها را حتی زمانی که در حال استفاده از برنامه‌های دیگر هستید، به شما نمایش دهد.
 
