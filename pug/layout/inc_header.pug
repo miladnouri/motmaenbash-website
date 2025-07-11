@@ -13,13 +13,16 @@ nav.navbar.navbar-expand-lg
     .collapse.navbar-collapse#navbarNav
       ul.navbar-nav.ms-auto
         li.nav-item
-          a.nav-link(href="index.html#whatsphishing" title="فیشینگ چیست؟") 
-            b فیشینگ 
-            | چیست؟
-        li.nav-item
           a.nav-link(href="donate.html")
             i.fas.fa-heart.fa-beat
             |  حمایت مالی
+        li.nav-item
+          a.nav-link(
+            href="faqs.html" 
+            title="سوال‌های پرتکرار"
+          )
+            i.fas.fa-circle-question
+            |  سوال‌های پرتکرار            
         li.nav-item.dropdown#downloadMenu
           a.nav-link.dropdown-toggle(
             href="#" 
@@ -39,14 +42,13 @@ nav.navbar.navbar-expand-lg
                 target="_blank"
               )
                 | گوکل‌پلی
+            li
+              a.dropdown-item(
+                href="https://cafebazaar.ir/app/nu.milad.motmaenbash" 
+                target="_blank"
+              )
+                | کافه بازار
                 //- span.badge.bg-info.text-white.ms-2 به زودی
-            //- li
-            //-   a.dropdown-item(
-            //-     href="https://cafebazaar.ir/app/" 
-            //-     target="_blank"
-            //-   )
-            //-     | بازار
-            //-     span.badge.bg-info.text-white.ms-2 به زودی
             li
               hr.dropdown-divider
             |

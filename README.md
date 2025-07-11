@@ -3,7 +3,7 @@
 MotmaenBash is a browser extension and Android app that helps users protect themselves from phishing attacks. This repository contains the landing page for the project, along with download links for the browser extensions (Chrome, Firefox, and Yandex) and mobile apps.
 
 
-This repository contains the website source code for MotmaenBash project. For the main project repository including browser extensions and mobile app source code, please visit [MotmaenBash on GitHub](https://github.com/miladnouri/motmaenbash).
+This repository contains the website source code for MotmaenBash project. For the main project repository including browser extensions and mobile app source code, please visit [MotmaenBash on GitHub](https://github.com/motmaenbash/motmaenbash).
 
 ## Features
 - **Phishing Protection**: Verifies the authenticity of Iranian payment gateways.
