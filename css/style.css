@@ -349,6 +349,15 @@ section h2.title-bg::before {
 }
 
 
+.trust-box {
+  border-left: 10px solid #458a92;
+  background-color: rgb(24 45 67) !important
+}
+
+.trust-list i {
+  color: #adc3d9;
+}
+
 /* Donate */
 .donate {
     background: #ffeeba;
