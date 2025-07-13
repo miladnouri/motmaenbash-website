@@ -1,18 +1,19 @@
 @charset "UTF-8";
 @import url('fontawesome.all.min.css');
 
-:root {
-    --bs-blue: rgb(19, 109, 188);
-    --bs-blue-dark: rgb(18, 97, 167);
-    
-}
-
 @font-face {
     font-family: 'Vazir';
     src: url('../webfonts/Vazirmatn-RD[wght].ttf') format('woff2-variations');
     font-weight: 100 900;
     font-display: swap;
 }
+
+:root {
+    --bs-blue: rgb(19, 109, 188);
+    --bs-blue-dark: rgb(18, 97, 167);
+    --btn-platform-transition: all 0.5s ease;
+}
+
 
 body {
     font-family: 'Vazir', sans-serif;
@@ -48,6 +49,9 @@ a {
     transition: all 0.3s ease;
 }
 
+.btn b {
+    font-weight: 700;
+}
 
 .btn:hover {
     transform: translateY(2px);
@@ -78,10 +82,83 @@ a {
     background: var(--bs-blue);
 }
 
-
-.btn b {
-    font-weight: 700;
+/* Platform Buttons */
+.btn-platform {
+    display: flex;
+    border: 2.5px solid var(--bs-blue-dark);
+    overflow: hidden;
+    position: relative;
 }
+
+.btn-platform-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    transition: var(--btn-platform-transition);
+}
+
+.btn-platform-icon img {
+    width: 50%;
+    transition: var(--btn-platform-transition);
+}
+
+.btn-platform-text {
+    padding-right: 27%;
+    text-align: center;
+}
+
+.btn-platform:hover .btn-platform-icon {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.btn-platform:hover .btn-platform-icon img {
+    width: 14%;
+    transform: rotate(360deg);
+}
+
+.btn-platform-disabled {
+    background: #b5b5b5;
+    border: 2.5px solid gray;
+    transition: all 0.4s ease;
+}
+
+.btn-platform-disabled:hover {
+    transform: none;
+    border: 2.5px solid gray;
+}
+
+/* Platform Buttons Responsive*/
+@media screen and (max-width:1400px) {
+    .btn-platform-icon img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .btn-platform-icon {
+        width: 20%;
+    }
+
+    .btn-platform-icon img {
+        width: 34%;
+    }
+
+    .btn-platform:hover .btn-platform-icon img {
+        width: 8%;
+    }
+
+    .btn-platform-text {
+        padding-right: 40%;
+    }
+}
+
 
 /* Menu */
 .navbar {
@@ -276,12 +353,14 @@ section {
     padding: 40px 20px;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    scroll-margin-top: 70px; /* Add scroll margin to prevent content from being hidden behind sticky header */
+    scroll-margin-top: 70px;
+    /* Add scroll margin to prevent content from being hidden behind sticky header */
 }
 
 .title-bg {
     position: relative;
-    scroll-margin-top: 70px; /* Add scroll margin to prevent title from being hidden behind sticky header */
+    scroll-margin-top: 70px;
+    /* Add scroll margin to prevent title from being hidden behind sticky header */
 }
 
 /* .title-bg::before {
@@ -350,12 +429,12 @@ section h2.title-bg::before {
 
 
 .trust-box {
-  border-left: 10px solid #458a92;
-  background-color: rgb(24 45 67) !important
+    border-left: 10px solid #458a92;
+    background-color: rgb(24 45 67) !important
 }
 
 .trust-list i {
-  color: #adc3d9;
+    color: #adc3d9;
 }
 
 /* Donate */
@@ -369,7 +448,7 @@ section h2.title-bg::before {
     align-content: center;
     text-align: center;
 }
-    
+
 .media-logos a {
     margin: 10px;
     transition: transform 0.3s ease;
