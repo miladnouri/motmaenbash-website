@@ -120,13 +120,25 @@ html(lang="fa" dir="rtl")
                 |  اطلاع‌رسانی در مورد آخرین شگردهای کلاهبرداری
           .row.g-3.text-center
             .col-md-6
-              a.btn.btn-blue.w-100(href="https://play.google.com/store/apps/details?id=nu.milad.motmaenbash" target="_blank") دانلود از گوکل‌پلی
+              a.btn.btn-blue.btn-platform.w-100(href="https://play.google.com/store/apps/details?id=nu.milad.motmaenbash" target="_blank" title="دانلود مطمئن باش از Google Play")
+                .btn-platform-icon 
+                  img(src="/images/platforms/google-play.webp")
+                .btn-platform-text دانلود از Google Play
             .col-md-6
-              a.btn.btn-blue.w-100(href="https://cafebazaar.ir/app/nu.milad.motmaenbash" target="_blank") دانلود از بازار
+              a.btn.btn-blue.btn-platform.w-100(href="https://cafebazaar.ir/app/nu.milad.motmaenbash" target="_blank" title="دانلود مطمئن باش از بازار")
+                .btn-platform-icon 
+                  img(src="/images/platforms/bazzar.webp")
+                .btn-platform-text دانلود از بازار
             .col-md-6
-              a.btn.btn-blue.w-100(href="https://myket.ir/app/nu.milad.motmaenbash?utm_source=search-ads-gift&utm_medium=cpc" target="_blank") دانلود از مایکت
+              a.btn.btn-blue.btn-platform.w-100(href="https://myket.ir/app/nu.milad.motmaenbash?utm_source=search-ads-gift&utm_medium=cpc" target="_blank" title="دانلود مطمئن باش از مایکت")
+                .btn-platform-icon 
+                  img(src="/images/platforms/myket.webp")
+                .btn-platform-text دانلود از مایکت
             .col-md-6           
-              a.btn.btn-blue.w-100(href="#" target="_blank") دانلود از F-Droid (به‌زودی)
+              a.btn.btn-platform.btn-platform-disabled.w-100(href="#" target="_blank" title="به زودی!")
+                .btn-platform-icon 
+                  img(src="/images/platforms/f-droid.webp")
+                .btn-platform-text دانلود از F-Droid
 
         .col-12.col-md-6
           .row
@@ -138,7 +150,7 @@ html(lang="fa" dir="rtl")
               img.screenshot(src="images/screenshot3.jpg" alt="تصویر برنامه مطمئن باش")
 
 
-          
+
         .col-12
           .alert.alert-warning.mt-5.fs-6
             i.fas.fa-triangle-exclamation.me-1
@@ -210,33 +222,33 @@ html(lang="fa" dir="rtl")
 
           p.lh-lg.fw-bold هدف اصلی حملات فیشینگ، دستیابی به داده‌های محرمانه کاربران است:
           ul.list-unstyled.fs-6
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | اطلاعات کارت‌های بانکی و حساب‌های مالی
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | نام کاربری و رمزهای عبور
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | اطلاعات هویتی و شخصی
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | کدهای تایید دو مرحله‌ای و رمزهای یکبار مصرف
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | اطلاعات کارت‌های بانکی و حساب‌های مالی
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | نام کاربری و رمزهای عبور
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | اطلاعات هویتی و شخصی
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | کدهای تایید دو مرحله‌ای و رمزهای یکبار مصرف
 
           p.lh-lg.fw-bold.mt-4 مهاجمان از روش‌های مختلفی برای فیشینگ استفاده می‌کنند:
           ul.list-unstyled.fs-6
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | طراحی صفحات جعلی با ظاهری کاملا مشابه درگاه‌های بانکی و سرویس‌های معتبر
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | ارسال ایمیل‌های جعلی و فریبنده با درخواست اطلاعات حساس
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | ارسال پیامک‌های فریبنده با پیشنهادات وسوسه‌انگیز همراه با لینک به سایت‌ها و اپلیکیشن‌های جعلی
-              li
-                i.fas.fa-triangle-exclamation.text-warning.me-1
-                | انتشار اپلیکیشن‌های مخرب و جعلی در پیام‌رسان‌ها و شبکه‌های اجتماعی
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | طراحی صفحات جعلی با ظاهری کاملا مشابه درگاه‌های بانکی و سرویس‌های معتبر
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | ارسال ایمیل‌های جعلی و فریبنده با درخواست اطلاعات حساس
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | ارسال پیامک‌های فریبنده با پیشنهادات وسوسه‌انگیز همراه با لینک به سایت‌ها و اپلیکیشن‌های جعلی
+            li
+              i.fas.fa-triangle-exclamation.text-warning.me-1
+              | انتشار اپلیکیشن‌های مخرب و جعلی در پیام‌رسان‌ها و شبکه‌های اجتماعی
 
           .alert.alert-warning.mt-4.fs-6
             i.fas.fa-triangle-exclamation.me-1
@@ -482,7 +494,7 @@ html(lang="fa" dir="rtl")
         |  با هدف افزایش امنیت کاربران ایرانی در فضای مجازی توسعه یافته است. حضور این ابزار در رسانه‌های مختلف، نقش مهمی در آگاهی‌بخشی عمومی و کاهش کلاهبرداری‌های اینترنتی دارد. اگر خبرنگار، وبلاگ‌نویس یا تولیدکننده محتوا هستید، می‌توانید با معرفی این افزونه به مخاطبان خود، در ارتقای امنیت سایبری کاربران ایرانی سهیم باشید.
         br
         |  برای دریافت اطلاعات بیشتر یا هماهنگی جهت تهیه گزارش و مصاحبه، با ما در ارتباط باشید: hello [at] Motmaenbash [dot] ir
-      
+
       .alert.alert-info.text-center.fs-6.mb-4
         | چنانچه قصد معرفی "مطمئن باش" را در سایت و رسانه خود دارید، جهت شفافیت بیشتر و آگاهی کاربرها، لطفا به نکات مهم در مورد
         a.fs-6.m-1(href="#trust")  
@@ -492,6 +504,6 @@ html(lang="fa" dir="rtl")
         |  با اشتراک‌گذاری «مطمئن باش» در شبکه‌های اجتماعی و معرفی آن به دوستان و آشنایان، به گسترش فرهنگ امنیت سایبری و محافظت از هموطنان در برابر کلاهبرداری‌های اینترنتی کمک کنید.
 
 
-            
+
     include ../layout/inc_footer
     include ../layout/inc_scripts
