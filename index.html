@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#1261A7">
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https:; frame-src 'none'; object-src 'none'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
     <!-- SEO Meta Tags-->
     <meta name="description" content="مطمئن باش، ابزاری رایگان شامل افزونه‌های مرورگر و اپلیکیشن اندروید برای شناسایی و مقابله با فیشینگ و کلاهبرداری اینترنتی است.">
     <meta name="keywords" content="ضد فیشینگ, امنیت سایبری, افزونه مرورگر, اپلیکیشن اندروید, مطمئن باش, کلاهبرداری اینترنتی, فیشینگ, MotmaenBash">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Milad Nouri">
+    <meta name="author" content="محمدحسین نوروزی (Mohammad Hossein Norouzi)">
     <!-- Open Graph Tags-->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://motmaenbash.ir">
@@ -384,10 +391,11 @@
           </div>
         </div>
         <hr class="my-3">
-        <p class="text-center mb-0 fs-6 footer-copyright">توسعه داده شده توسط <a href="https://milad.nu" target="_blank">میلاد نوری </a><i class="fas fa-heart fa-beat text-danger mx-1"></i>برای مردم ایران</p>
+        <p class="text-center mb-0 fs-6 footer-copyright">توسعه داده شده توسط <a href="https://github.com/MohammadHNdev" target="_blank">محمدحسین نوروزی (Mohammad Hossein Norouzi)</a><i class="fas fa-heart fa-beat text-danger mx-1"></i>برای مردم ایران</p>
       </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js?v=5.3.3"></script>
     <script src="js/main.js?v=1.0.1"></script>
+    <script src="js/secure-main.js?v=2.0.0"></script>
   </body>
 </html>
